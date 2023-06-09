@@ -57,7 +57,8 @@ public class PlayerScript : MonoBehaviour
 
     private Vector3 initialPosition;
 
-    private Vector3 atticPosition;
+    private Vector3 atticPosition, 
+        bathroom, pBedroom, corridor1, corridor2, corridor3, corridor4, bedroom;
 
     private GameObject flashLight;
 
@@ -89,7 +90,6 @@ public class PlayerScript : MonoBehaviour
         }
         else
         {
-            DontDestroyOnLoad(gameObject);
             _instance = this;
         }
         rb = GetComponent<Rigidbody>();
@@ -102,7 +102,15 @@ public class PlayerScript : MonoBehaviour
         GamePhase = 0;
         playerInTrigger = false;
         initialPosition = new Vector3(0f,0f,9.5f);
-        atticPosition = new Vector3(56.7f,4.88f,19.26f);
+        atticPosition = new Vector3(57.2f,4.88f,19.26f);
+        bedroom = new Vector3(5.7f, -0.14f, 4.1f);
+        bathroom = new Vector3(21.6f, -0.26f, 4.1f);
+        pBedroom = new Vector3(33.7f, -0.2f, 4.1f);
+        corridor1 = new Vector3(5.7f, -0.2f, 0.23f);
+        corridor2 = new Vector3(21.6f, -0.24f, 0.23f);
+        corridor3 = new Vector3(33.8f, -0.24f, 0.23f);
+        corridor4 = new Vector3(57.22f, -0.24f, 7.6f);
+
         transform.position = initialPosition;
 
         flashLight = GameObject.Find("FlashLight");
@@ -346,12 +354,31 @@ public class PlayerScript : MonoBehaviour
             case "Attic":
                 transform.position = atticPosition;
                 break;
-
+            case "Corridor1":
+                transform.position = corridor1;
+                break;
+            case "Bedroom":
+                transform.position = bedroom;
+                break;
+            case "PBedroom":
+                transform.position = pBedroom;
+                break;
+            case "Bathroom":
+                transform.position = bathroom;
+                break;
+            case "Corridor2":
+                transform.position = corridor2;
+                break;
+            case "Corridor3":
+                transform.position = corridor3;
+                break;
+            case "Corridor4":
+                transform.position = corridor4;
+                break;
             default:
                 Debug.LogWarning("Update de posição não funcionando");
                 break;
         }
-        transform.position = atticPosition;
     }
 
 }
