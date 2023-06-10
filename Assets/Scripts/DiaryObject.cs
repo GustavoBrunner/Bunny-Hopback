@@ -21,6 +21,7 @@ public class DiaryObject : MonoBehaviour, IInteractable
     public void Interact()
     {
         GameEvents.onDiaryInteracted.Invoke();
+        Debug.Log("interagindo com Diário");
         HideItemInteraction();
     }
 

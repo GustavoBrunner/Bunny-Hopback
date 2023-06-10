@@ -46,6 +46,7 @@ public class Diary : MonoBehaviour
     {
         index = 0;
         gameObject.transform.localScale = Vector3.one;
+        Debug.Log("Abrindo diário");
         foreach (var page in pages)
         {
             if(page.gameObject.name != "Page")
