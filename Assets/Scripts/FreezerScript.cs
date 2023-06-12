@@ -15,7 +15,8 @@ public class FreezerScript : ObjectsScript , IInteractable
     protected override void Awake()
     {
         base.Awake();
-        puzzleAnswer = "Produto";
+        puzzleAnswer = "Trakinas";
+        Debug.Log(puzzleAnswer);
         RabbitScript.FirstPuzzleCompleted += TurnInteractionOn;
         GameEvents.onUpdatePhase.AddListener(UpdateGameState);
         GameEvents.onRestartDayEvent.AddListener(RestartGame);
@@ -34,10 +35,12 @@ public class FreezerScript : ObjectsScript , IInteractable
             case "SecondQuestPhaseLoop1":
 
                 //DialogueManager.instance.CallDialogue(this.SecondPhaseDialogue);
+                UiController._instance.UpdateTips("\n-> Deve ter a palavra secreta em algum lugar");
                 break;
             case "SecondQuestPhaseLoop2":
 
                 //DialogueManager.instance.CallDialogue(this.FirstPhaseDialogue);
+                UiController._instance.UpdateTips("\n-> ONDE ESTÁ A PALAVRA????");
                 break;
 
 

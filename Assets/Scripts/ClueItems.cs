@@ -9,6 +9,8 @@ public class ClueItems : MonoBehaviour, IInteractable
     public GamePhase Phase { get ; set ; }
     public Transform pos { get => this.transform; set => throw new System.NotImplementedException(); }
 
+    [SerializeField]
+    private Dialogue[] ListDialogue;
     private void Awake()
     {
         
@@ -32,6 +34,8 @@ public class ClueItems : MonoBehaviour, IInteractable
                 break;
             case "ListClue":
                 UiController._instance.ShowList();
+
+                DialogueManager.instance.CallDialogue(ListDialogue);
                 break;
             default:
                 Debug.Log("Objeto desconhecido");

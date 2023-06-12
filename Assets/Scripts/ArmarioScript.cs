@@ -32,6 +32,7 @@ public class ArmarioScript : ObjectsScript, IInteractable
         if (this.canBeInteracted)
         {
             GameEvents.onCabinet.Invoke();
+            UiController._instance.UpdateTips("\n-> Hm... Onde será que eu posso achar essa senha?");
         }
 
         switch (_phase)

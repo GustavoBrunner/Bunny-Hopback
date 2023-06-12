@@ -35,6 +35,11 @@ public class UiController : MonoBehaviour
 
     private string initialText;
     private bool isTipsOpened;
+
+
+    private Animator animator;
+
+    private Image tipsImage;
     protected virtual void Awake()
     {
         if(instance)
@@ -58,12 +63,14 @@ public class UiController : MonoBehaviour
 
         tipsText = GameObject.Find("TipsUi").GetComponentInChildren<TMP_Text>();
         isTipsOpened = false;
+        animator = GetComponent<Animator>();
+        tipsImage = GameObject.Find("TipsImage").GetComponent<Image>();
         CloseTerminal();
         CloseWordUi();
         HideDraw();
         HideList();
         HidePicFrame();
-
+        
     }
     
     protected virtual void Start()
@@ -153,22 +160,34 @@ public class UiController : MonoBehaviour
 
     public void UpdateTips(string newTip)
     {
-        var tips = tipsText.text;
-        tips += newTip;
-        tipsText.text = tips;
+        if (!tipsText.text.Contains(newTip))
+        {
+            animator.SetTrigger("NewTip");
+            var tips = tipsText.text;
+            tips += newTip;
+            tipsText.text = tips;
+        }
+        else
+        {
+            return;
+        }
     }
 
     public void ShowTips()
     {
+        animator.SetBool("TipRead", false);
         if(!isTipsOpened)
         {
+            animator.SetBool("TipRead", true);
             tipsUi.transform.localScale = Vector3.one;
             isTipsOpened = true;
+            
         }
         else
         {
             tipsUi.transform.localScale = Vector3.zero;
             isTipsOpened = false;
+            animator.SetBool("TipRead", false);
         }
     }
     public void HideTips()

@@ -40,7 +40,7 @@ public class GameController : MonoBehaviour
     public static bool isThirdPuzzleItemEnabled { get; private set; } = false;
     public static bool isForthPuzzleItemEnabled { get; private set;} = false;
     public static bool isFifthPuzzleItemEnabled { get; private set;} = false;
-    [SerializeField]private int[] RightCombination = new int[] { 0, 2, 3, 4 };
+    [SerializeField]private int[] RightCombination = new int[4];
     
 
     public static event GameControllerHandler FirstPuzzleOpened;
@@ -76,6 +76,15 @@ public class GameController : MonoBehaviour
     public int DialogueToTrigger;
 
     public string _phase;
+
+    [SerializeField]
+    private Dialogue[] ARightCombination;
+
+    [SerializeField]
+    private Dialogue[] CombinationError;
+
+
+
     private void Awake()
     {
         if(instance) // impedindo a instância de ser destruída ao carregar outra cena sem multiplicar
@@ -100,13 +109,16 @@ public class GameController : MonoBehaviour
         SceneManager.LoadSceneAsync("Attic", LoadSceneMode.Additive);
 
         //mainCam = GameObject.FindGameObjectWithTag("MainCamera");
-
-
+        RightCombination[0] = 1;
+        RightCombination[1] = 4;
+        RightCombination[2] = 1;
+        RightCombination[3] = 0;
+        Debug.Log($"A combinação correta é: {RightCombination[0]}, {RightCombination[1]}, {RightCombination[2]}, {RightCombination[3]} ");
     }
     public void Start()
     {
-        phase = GamePhase.StartThirdPuzzle;
-        Loop = GameLoop.Second;
+        phase = GamePhase.Start;
+        Loop = GameLoop.None;
         GameEvents.onUpdatePhase.Invoke(Loop, phase);
         DialogueToTrigger = 1;
     }
@@ -128,20 +140,24 @@ public class GameController : MonoBehaviour
     }
     public void CheckCombination(int[] _code)
     {
+        Debug.Log($"a combinação foi {_code[0]}, {_code[1]}, {_code[2]}, {_code[3]}");
+        Debug.Log($"A combinação correta é: {RightCombination[0]}, {RightCombination[1]}, {RightCombination[2]}, {RightCombination[3]} ");
         if (_code[0] == RightCombination[0] && _code[1] == RightCombination[1] && _code[2] == RightCombination[2] && _code[3] == RightCombination[3])
         {
             GameEvents.GetFlashLight.Invoke();
+            //DialogueManager.instance.CallDialogue(PlayerScript.instance.RightCombination);
         }
         else
         {
             Debug.Log("Combina��o errada, tente novamente");
+            //DialogueManager.instance.CallDialogue(CombinationError);
         }
     }
     public void CheckWordPuzzle(string s)
     {
-        if(FreezerScript.puzzleAnswer == s)
+        if(s.Contains(FreezerScript.puzzleAnswer))
         {
-            GameEvents.GetSecondItem.Invoke();   
+            GameEvents.GetSecondItem.Invoke();
         }
         else
         {

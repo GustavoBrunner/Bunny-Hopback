@@ -51,9 +51,15 @@ public class PlayerScript : MonoBehaviour
 
     [SerializeField]
     private Dialogue[] LastPhaseDialogues;
-    
+
     [SerializeField]
     private Dialogue[] AtticTriggerDialogues;
+
+    [SerializeField]
+    private Dialogue[] ARightCombination;
+
+    [SerializeField]
+    private Dialogue[] CombinationError;
 
     private Vector3 initialPosition;
 
@@ -296,6 +302,8 @@ public class PlayerScript : MonoBehaviour
     private void GetFlashLight()
     {
         this.hasFlashLight = true;
+        UiController._instance.UpdateTips("\n-> Vá até o sótão!");
+
         //trocará também as sprites da personagem principal.
     }
 

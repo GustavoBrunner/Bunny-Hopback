@@ -299,28 +299,42 @@ MonoBehaviour:
   Horizontal: 0
   _playerInTrigger: 0
   FirstPhaseDialogues:
+  - name: Menina
+    sentence: "Texto aleat\xF3rio"
   - name: 
-    sentence: 
-  - name: 
-    sentence: 
-  CutsceneDialogues1: []
-  CutsceneDialogues2: []
+    sentence: "Texto aleat\xF3rio"
+  CutsceneDialogues1:
+  - name: Menina
+    sentence: "Texto aleat\xF3rio"
+  - name: Menina
+    sentence: "Texto aleat\xF3rio"
+  CutsceneDialogues2:
+  - name: Menina
+    sentence: "Texto aleat\xF3rio"
+  - name: Menina
+    sentence: "Texto aleat\xF3rio"
   SecondPhaseDialogues:
-  - name: 
-    sentence: 
-  - name: 
-    sentence: 
+  - name: Menina
+    sentence: "Texto aleat\xF3rio"
+  - name: Menina
+    sentence: "Texto aleat\xF3rio"
   ThirdPhaseDialogues:
-  - name: 
-    sentence: 
-  - name: 
-    sentence: 
+  - name: Menina
+    sentence: "Texto aleat\xF3rio"
+  - name: Menina
+    sentence: "Texto aleat\xF3rio"
   LastPhaseDialogues:
-  - name: 
-    sentence: 
-  - name: 
-    sentence: 
-  AtticTriggerDialogues: []
+  - name: Menina
+    sentence: "Texto aleat\xF3rio"
+  - name: Menina
+    sentence: "Texto aleat\xF3rio"
+  AtticTriggerDialogues:
+  - name: Menina
+    sentence: "N\xE3o devo ir no s\xF3t\xE3o, \xE9 muito escuro, eu tenho medo."
+  - name: Menina
+    sentence: "Minha m\xE3e disse que o bicho-pap\xE3o vive l\xE1..."
+  ARightCombination: []
+  CombinationError: []
   PlayerInteracting: 0
 --- !u!136 &4853443133719405707
 CapsuleCollider:

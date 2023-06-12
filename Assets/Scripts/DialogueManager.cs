@@ -70,6 +70,13 @@ public class DialogueManager : MonoBehaviour
             StartCoroutine(TypeSentence(d));
         }
     }
+    private void Update()
+    {
+        if( Input.GetKeyDown(KeyCode.Space) && IsDialogueHappn)
+        {
+            StartCoroutine(SkipCooldown());
+        }
+    }
 
     private IEnumerator TypeSentence(Dialogue[] _d)
     {
@@ -136,5 +143,11 @@ public class DialogueManager : MonoBehaviour
     {
         TurnDialogueOn();
         UpdateDialogue(d);
+    }
+
+    private IEnumerator SkipCooldown()
+    {
+        yield return new WaitForSeconds(0.1f);
+        NextBtn();
     }
 }

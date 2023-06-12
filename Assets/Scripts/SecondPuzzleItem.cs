@@ -78,10 +78,12 @@ public class SecondPuzzleItem : ObjectsScript, IInteractable
         {
             GameController._instance.UpdateGamePhase(GameLoop.First, GamePhase.EndSecondPuzzle);
             Debug.Log("Mudando o loop para: " + this.Loop);
+            UiController._instance.UpdateTips("\n? Bunny está com muita fome. Devo me apressar!");
         }
         else
         {
             GameController._instance.UpdateGamePhase(GameLoop.Second, GamePhase.EndSecondPuzzle);
+            UiController._instance.UpdateTips("\n? Bunny @#$%¨$##@# devo... me @#$@#% ?");
         }
     }
 
