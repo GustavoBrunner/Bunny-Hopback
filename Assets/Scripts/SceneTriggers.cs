@@ -151,6 +151,7 @@ public class SceneTriggers : MonoBehaviour
                         if(!PlayerScript.instance.hasFlashLight)
                         {
                             PlayerScript.instance.AtticDialogueTrigger();
+                            if(GameController._instance._phase == GamePhaseChecker.ThirdQuestPhase)
                             UiController._instance.UpdateTips("\n-> Acho que a lanterna ficava no armário dos meus pais");
                         }
                         else

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FreezerScript : ObjectsScript , IInteractable
 {
-    public static string puzzleAnswer;
+    public const string wordAnswer = "Trakinas";
     public delegate void InteractionHandler();
     public static event InteractionHandler OnPlayerInteract;
 
@@ -15,8 +15,7 @@ public class FreezerScript : ObjectsScript , IInteractable
     protected override void Awake()
     {
         base.Awake();
-        puzzleAnswer = "Trakinas";
-        Debug.Log(puzzleAnswer);
+        Debug.Log(wordAnswer);
         RabbitScript.FirstPuzzleCompleted += TurnInteractionOn;
         GameEvents.onUpdatePhase.AddListener(UpdateGameState);
         GameEvents.onRestartDayEvent.AddListener(RestartGame);

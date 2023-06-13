@@ -50,5 +50,7 @@ public class GameEvents
     public static UnityEvent TransitionDialogue = new UnityEvent();
 
     public static UnityEvent onDiaryInteracted = new UnityEvent();
+
+    public static UnityEvent onEndDiaryInteraction = new UnityEvent();
     
 }

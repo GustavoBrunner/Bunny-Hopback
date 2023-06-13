@@ -117,8 +117,8 @@ public class GameController : MonoBehaviour
     }
     public void Start()
     {
-        phase = GamePhase.Start;
-        Loop = GameLoop.None;
+        phase = GamePhase.StartThirdPuzzle;
+        Loop = GameLoop.Second;
         GameEvents.onUpdatePhase.Invoke(Loop, phase);
         DialogueToTrigger = 1;
     }
@@ -155,7 +155,7 @@ public class GameController : MonoBehaviour
     }
     public void CheckWordPuzzle(string s)
     {
-        if(s.Contains(FreezerScript.puzzleAnswer))
+        if(s.Contains(FreezerScript.wordAnswer))
         {
             GameEvents.GetSecondItem.Invoke();
         }
@@ -200,7 +200,8 @@ public class GameController : MonoBehaviour
         }
         else
         {
-
+            DialogueManager.instance.isCutscene = true;
+            camAnimator.SetTrigger("CutsceneStart");
         }
         
     }
