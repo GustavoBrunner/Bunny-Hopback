@@ -2699,6 +2699,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 249a5378c252e814697bcf43af2262b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  diaryDialogue:
+  - name: Menina
+    sentence: "O que? Por que isso t\xE1 aqui?"
+  - name: Menina
+    sentence: Nunca tinha visto isso antes.
+  secondDiaryDialogue:
+  - name: Menina
+    sentence: "O que? N\xE3o \xE9 poss\xEDvel..."
+  - name: Menina
+    sentence: O Bunny...
+  - name: Menina
+    sentence: "Todas aquelas sensa\xE7\xF5es estranhas...?"
+  - name: Menina
+    sentence: "Ele \xE9 um... Monstro?"
 --- !u!135 &1027993801
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4446,7 +4460,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh30682
+  m_Name: pb_Mesh83958
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2

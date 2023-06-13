@@ -13,7 +13,7 @@ public class UiController : MonoBehaviour
 
     protected RectTransform FirstPuzzleInput;
     protected TMP_InputField PuzzleInput;
-    protected string PuzzleAnswer = "Produto";
+    protected string PuzzleAnswer = "Trakinas";
     protected RectTransform WordPuzzleTf;
     private static UiController instance;
 
@@ -100,7 +100,7 @@ public class UiController : MonoBehaviour
     public void WordPuzzleBtn()
     {
         var answer = PuzzleInput.text;
-        if(answer == PuzzleAnswer)
+        if (answer.ToLower() == PuzzleAnswer.ToLower())
         {
             PuzzleInput.text = "Certa resposta!";
             GameEvents.GetSecondItem.Invoke();
@@ -176,7 +176,7 @@ public class UiController : MonoBehaviour
     public void ShowTips()
     {
         animator.SetBool("TipRead", false);
-        if(!isTipsOpened)
+        if (!isTipsOpened && !DialogueManager.instance.IsDialogueHappn)
         {
             animator.SetBool("TipRead", true);
             tipsUi.transform.localScale = Vector3.one;

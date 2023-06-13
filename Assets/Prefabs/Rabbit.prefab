@@ -64,10 +64,12 @@ MonoBehaviour:
   - name: asdasdasd
     sentence: asdasdasdasdsada
   NonePhaseDialogues:
-  - name: adasdasd
-    sentence: asdasdasdasdasd
-  - name: 
-    sentence: 
+  - name: Menina
+    sentence: 'Bom dia, Bunny! '
+  - name: Menina
+    sentence: "Quer brincar? Vou l\xE1 pegar o brinquedo"
+  - name: Menina
+    sentence: "Onde ser\xE1 que eu deixei ele...?"
 --- !u!135 &8638109427480577227
 SphereCollider:
   m_ObjectHideFlags: 0
