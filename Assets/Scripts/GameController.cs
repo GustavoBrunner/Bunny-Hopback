@@ -105,8 +105,8 @@ public class GameController : MonoBehaviour
     }
     public void Start()
     {
-        phase = GamePhase.StartThirdPuzzle;
-        Loop = GameLoop.Second;
+        phase = GamePhase.Start;
+        Loop = GameLoop.None;
         GameEvents.onUpdatePhase.Invoke(Loop, phase);
         DialogueToTrigger = 1;
     }
@@ -182,7 +182,7 @@ public class GameController : MonoBehaviour
 
             camAnimator.SetTrigger("CutsceneStart");
         }
-        else
+        else if(cs == 3)
         {
 
         }
@@ -230,6 +230,11 @@ public class GameController : MonoBehaviour
             DialogueToTrigger = 2;
             StartFirstCustsceneDialogue(DialogueToTrigger);
         }
+        if( s == "FinalPhase")
+        {
+            DialogueToTrigger = 3;
+            StartFirstCustsceneDialogue(DialogueToTrigger);
+        }
     }
 
     public void QuestTurnOnCam()
@@ -246,5 +251,10 @@ public class GameController : MonoBehaviour
         camAnimator.SetTrigger("QuestTurnOnCam");
         DialogueManager.instance.isCutscene = false;
         StopAllCoroutines();
+    }
+    public void GoToEndGame()
+    {
+        //chamado no final do último diálogo, indo para o final do jogo. 
+        //SceneManager.LoadScene()
     }
 }

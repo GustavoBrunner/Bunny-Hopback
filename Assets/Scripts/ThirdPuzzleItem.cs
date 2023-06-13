@@ -45,8 +45,9 @@ public class ThirdPuzzleItem : ObjectsScript, IInteractable
                     DialogueManager.instance.CallDialogue(this.NonePhaseDialogues);
                     Debug.Log("Primeira fase");
                     GetThirdItem();
+                    GameController._instance.UpdateGamePhase(GameLoop.Second, GamePhase.Final);
+                    RabbitScript.instance.UpdatePositionFinal();
                     break;
-                
 
                 default:
                     DialogueManager.instance.CallDialogue(this.NonePhaseDialogue);
@@ -56,8 +57,6 @@ public class ThirdPuzzleItem : ObjectsScript, IInteractable
         }
 
     }
-
-
     public void TurnInteractionOn()
     {
         this.canBeInteracted = true;

@@ -42,6 +42,9 @@ public class PlayerScript : MonoBehaviour
 
     [SerializeField]
     private Dialogue[] CutsceneDialogues2;
+    
+    [SerializeField]
+    private Dialogue[] CutsceneDialogues3;
 
     [SerializeField]
     private Dialogue[] SecondPhaseDialogues;
@@ -331,6 +334,10 @@ public class PlayerScript : MonoBehaviour
                 break;
             case 2:
                 DialogueManager.instance.CallDialogue(this.CutsceneDialogues2);
+                Debug.Log("Segundo Diálogo");
+                break;
+            case 3:
+                DialogueManager.instance.CallDialogue(this.CutsceneDialogues3);
                 Debug.Log("Segundo Diálogo");
                 break;
             default:

@@ -936,7 +936,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh114174
+=======
+  m_Name: pb_Mesh-1356
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1941,7 +1945,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh114140
+=======
+  m_Name: pb_Mesh27688
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2949,7 +2957,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh114052
+=======
+  m_Name: pb_Mesh27624
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -3752,7 +3764,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh114532
+=======
+  m_Name: pb_Mesh27926
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -5187,7 +5203,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh114346
+=======
+  m_Name: pb_Mesh27778
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -6951,7 +6971,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh113460
+=======
+  m_Name: pb_Mesh27288
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -7279,7 +7303,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh114546
+=======
+  m_Name: pb_Mesh27940
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -12549,7 +12577,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh114462
+=======
+  m_Name: pb_Mesh27864
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -19424,7 +19456,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh114916
+=======
+  m_Name: pb_Mesh28136
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -20537,11 +20573,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6798347158320718880, guid: 344b8bd104602d74cbfdf0c35b430954, type: 3}
       propertyPath: NonePhaseDialogues.Array.data[1].name
-      value: teste
+      value: Menina
       objectReference: {fileID: 0}
     - target: {fileID: 6798347158320718880, guid: 344b8bd104602d74cbfdf0c35b430954, type: 3}
       propertyPath: NonePhaseDialogues.Array.data[2].name
-      value: teste2
+      value: Menina
       objectReference: {fileID: 0}
     - target: {fileID: 6798347158320718880, guid: 344b8bd104602d74cbfdf0c35b430954, type: 3}
       propertyPath: ThirdPhaseDialogue.Array.data[0].name
@@ -20565,15 +20601,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6798347158320718880, guid: 344b8bd104602d74cbfdf0c35b430954, type: 3}
       propertyPath: NonePhaseDialogues.Array.data[0].sentence
-      value: teste
+      value: Ah, o brinquedinho do Bunny!
       objectReference: {fileID: 0}
     - target: {fileID: 6798347158320718880, guid: 344b8bd104602d74cbfdf0c35b430954, type: 3}
       propertyPath: NonePhaseDialogues.Array.data[1].sentence
-      value: teste2
+      value: "Ele fica t\xE3o feliz quando brincamos!"
       objectReference: {fileID: 0}
     - target: {fileID: 6798347158320718880, guid: 344b8bd104602d74cbfdf0c35b430954, type: 3}
       propertyPath: NonePhaseDialogues.Array.data[2].sentence
-      value: teste3
+      value: "Ali\xE1s, onde ser\xE1 que ele est\xE1?"
       objectReference: {fileID: 0}
     - target: {fileID: 6798347158320718880, guid: 344b8bd104602d74cbfdf0c35b430954, type: 3}
       propertyPath: ThirdPhaseDialogue.Array.data[0].sentence
