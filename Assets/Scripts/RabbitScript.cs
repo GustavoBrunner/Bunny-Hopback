@@ -152,16 +152,16 @@ public class RabbitScript : MonoBehaviour, IInteractable
                         GameEvents.onInventoryClear.Invoke();
                         
                         GameController._instance.UpdateGamePhase(GameLoop.Second, GamePhase.StartThirdPuzzle);
-<<<<<<< Updated upstream
+
                     }
-=======
+
                         UiController._instance.UpdateTips("\n? Tenho que mesmo que ir até o sótão...?");
-                    }
+                    
                     break;
                 case "FinalPhase":
                     GameEvents.onInventoryClear.Invoke();
                     GameController._instance.StartCutscene(3);
->>>>>>> Stashed changes
+
                     break;
 
                 default:
