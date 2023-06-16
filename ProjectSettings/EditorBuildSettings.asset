@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ParentsRoom.unity
     guid: 255bffc6741fbc24bbc0fde28ed5827b
+  - enabled: 1
+    path: Assets/Scenes/EndGame.unity
+    guid: f93306f16e06c5844bb59c13f3f5e750
   m_configObjects: {}

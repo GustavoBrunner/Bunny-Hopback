@@ -345,6 +345,19 @@ MonoBehaviour:
     sentence: EBAAAA! To indo!
   - name: Menina
     sentence: "Hmm?? Essa sensa\xE7...?"
+  CutsceneDialogues3:
+  - name: Menina
+    sentence: 
+  - name: Menina
+    sentence: 
+  - name: Menina
+    sentence: 
+  - name: Menina
+    sentence: 
+  - name: Menina
+    sentence: 
+  - name: Menina
+    sentence: 
   SecondPhaseDialogues:
   - name: Menina
     sentence: "Texto aleat\xF3rio"

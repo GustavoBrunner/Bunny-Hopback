@@ -117,8 +117,8 @@ public class GameController : MonoBehaviour
     }
     public void Start()
     {
-        phase = GamePhase.StartThirdPuzzle;
-        Loop = GameLoop.Second;
+        phase = GamePhase.Start;
+        Loop = GameLoop.None;
         GameEvents.onUpdatePhase.Invoke(Loop, phase);
         DialogueToTrigger = 1;
     }
@@ -230,9 +230,9 @@ public class GameController : MonoBehaviour
         GameEvents.GetFlashLight.Invoke();
     }
 
-    public void EndQuestFade()
+    public void EndGame()
     {
-
+        SceneManager.LoadScene("EndGame");
     }
 
     public void CheckWichDialogue(string s)
@@ -245,6 +245,11 @@ public class GameController : MonoBehaviour
         if (s == "FirstQuestPhaseLoop2")
         {
             DialogueToTrigger = 2;
+            StartFirstCustsceneDialogue(DialogueToTrigger);
+        }
+        if (s == "FinalPhase")
+        {
+            DialogueToTrigger = 3;
             StartFirstCustsceneDialogue(DialogueToTrigger);
         }
     }

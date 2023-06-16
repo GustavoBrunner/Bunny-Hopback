@@ -103,6 +103,10 @@ public class DialogueManager : MonoBehaviour
                 {
                     GameController._instance.StartWhiteEffect();
                 }
+                else if (GameController._instance._phase == GamePhaseChecker.FinalPhase)
+                {
+                    GameController._instance.EndGame();
+                }
             }
         }
     }
