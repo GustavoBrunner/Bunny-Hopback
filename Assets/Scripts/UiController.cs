@@ -11,10 +11,10 @@ public class UiController : MonoBehaviour
     private Vector3 UiScaleZero = new Vector3(0f,0f,0f);
     private Vector3 UiScaleOne = new Vector3(1f,1f,1f);
 
-    protected RectTransform FirstPuzzleInput;
-    protected TMP_InputField PuzzleInput;
-    protected string PuzzleAnswer = "Trakinas";
-    protected RectTransform WordPuzzleTf;
+    private RectTransform FirstPuzzleInput;
+    private TMP_InputField PuzzleInput;
+    private string PuzzleAnswer = "Trakinas";
+    private RectTransform WordPuzzleTf;
     private static UiController instance;
 
     public static UiController _instance 

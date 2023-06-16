@@ -86,7 +86,7 @@ public class RabbitScript : MonoBehaviour, IInteractable
                 case "FirstQuestEndLoop1Phase":
 
                     GameEvents.onInventoryClear.Invoke();
-                    GameController._instance.EndQuestFade();
+                    //GameController._instance.EndQuestFade();
 
                     GameController._instance.QuestTurnOnCam();
                     GameController._instance.UpdateGamePhase(GameLoop.First, GamePhase.StartSecondPuzzle);
@@ -107,7 +107,7 @@ public class RabbitScript : MonoBehaviour, IInteractable
 
                 case "SecondQuestPhaseLoop1": //libera o freezer para ser interagido
                     DialogueManager.instance.CallDialogue(this.ThirdPhaseDialogues);
-                    GameController._instance.EndQuestFade();
+                    //GameController._instance.EndQuestFade();
                     UiController._instance.UpdateTips("\n? Acho que a ração do Bunny fica na geladeira");
                     //GameController._instance.UpdateGamePhase(GameLoop.First, GamePhase.EndSecondPuzzle);
                 
@@ -154,9 +154,12 @@ public class RabbitScript : MonoBehaviour, IInteractable
                         
                         GameController._instance.UpdateGamePhase(GameLoop.Second, GamePhase.StartThirdPuzzle);
                         UiController._instance.UpdateTips("\n? Tenho que mesmo que ir até o sótão...?");
-                }
+                    }
                     break;
-
+                case "FinalPhase":
+                    GameController._instance.StartCutscene(3);
+                    GameEvents.onInventoryClear.Invoke();
+                    break;
 
                 default:
                     Debug.Log("Nenhuma das fases anteriores");

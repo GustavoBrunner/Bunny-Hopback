@@ -44,6 +44,7 @@ public class ThirdPuzzleItem : ObjectsScript, IInteractable
                 case "ThirdQuestPhase":
                     DialogueManager.instance.CallDialogue(this.NonePhaseDialogues);
                     Debug.Log("Primeira fase");
+                    GameController._instance.UpdateGamePhase(GameLoop.Second, GamePhase.Final);
                     GetThirdItem();
                     break;
                 

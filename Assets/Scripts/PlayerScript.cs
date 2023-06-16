@@ -44,6 +44,9 @@ public class PlayerScript : MonoBehaviour
     private Dialogue[] CutsceneDialogues2;
 
     [SerializeField]
+    private Dialogue[] CutsceneDialogues3;
+
+    [SerializeField]
     private Dialogue[] SecondPhaseDialogues;
 
     [SerializeField]
@@ -340,6 +343,10 @@ public class PlayerScript : MonoBehaviour
             case 2:
                 DialogueManager.instance.CallDialogue(this.CutsceneDialogues2);
                 Debug.Log("Segundo Diálogo");
+                break;
+            case 3:
+                DialogueManager.instance.CallDialogue(this.CutsceneDialogues3);
+                Debug.Log("Final Diálogo");
                 break;
             default:
                 Debug.Log("Teste Cutscene");
