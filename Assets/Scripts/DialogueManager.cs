@@ -80,6 +80,7 @@ public class DialogueManager : MonoBehaviour
 
     private IEnumerator TypeSentence(Dialogue[] _d)
     {
+        AudioController.instance.PlayKeyboard();
         var actualSentence = _d[index];
         nextsentences = _d;
         this.name.text = actualSentence.name;
@@ -98,14 +99,26 @@ public class DialogueManager : MonoBehaviour
                 if (GameController._instance._phase == "FirstQuestPhaseLoop1" || GameController._instance._phase == "SecondQuestEndPhaseLoop1")
                 {
                     GameController._instance.StartWhiteEffect();
+                    AudioController.instance.ChangeMusicPitch(1);
                 }
                 else if (GameController._instance._phase == "FirstQuestPhaseLoop2" || GameController._instance._phase == "SecondQuestEndPhaseLoop2")
                 {
                     GameController._instance.StartWhiteEffect();
+                    AudioController.instance.ChangeMusicPitch(2);
                 }
                 else if (GameController._instance._phase == GamePhaseChecker.FinalPhase)
                 {
-                    GameController._instance.EndGame();
+
+                    StartCoroutine(GoToFinal());
+                }
+            }
+            if(GameController._instance._phase == GamePhaseChecker.FinalPhase)
+            {
+                var beepSignal = CheckBeepMoment(_d);
+                if (beepSignal)
+                {
+                    AudioController.instance?.PlayBeep();
+                    AudioController.instance.ChangeMusicPitch(3);
                 }
             }
         }
@@ -130,6 +143,7 @@ public class DialogueManager : MonoBehaviour
             text.text = "";
             index++;
             StartCoroutine(TypeSentence(nextsentences));
+            AudioController.instance.PlayKeyboard();
         }
         else
         {
@@ -153,5 +167,25 @@ public class DialogueManager : MonoBehaviour
     {
         yield return new WaitForSeconds(0.1f);
         NextBtn();
+    }
+
+    private bool CheckBeepMoment(Dialogue[] d)
+    {
+        bool flag = false;
+        if (d[index].name == "Mamãe")
+        {
+            flag = true;
+        }
+        else
+        {
+            flag = false;
+        }
+
+        return flag; 
+    }
+    private IEnumerator GoToFinal()
+    {
+        yield return new WaitForSeconds(4f);
+        AudioController.instance.PlayBeep();
     }
 }

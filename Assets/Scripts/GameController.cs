@@ -77,13 +77,9 @@ public class GameController : MonoBehaviour
 
     public string _phase;
 
-    [SerializeField]
-    private Dialogue[] ARightCombination;
-
+    
     [SerializeField]
     private Dialogue[] CombinationError;
-
-
 
     private void Awake()
     {
@@ -140,17 +136,15 @@ public class GameController : MonoBehaviour
     }
     public void CheckCombination(int[] _code)
     {
-        Debug.Log($"a combinação foi {_code[0]}, {_code[1]}, {_code[2]}, {_code[3]}");
-        Debug.Log($"A combinação correta é: {RightCombination[0]}, {RightCombination[1]}, {RightCombination[2]}, {RightCombination[3]} ");
         if (_code[0] == RightCombination[0] && _code[1] == RightCombination[1] && _code[2] == RightCombination[2] && _code[3] == RightCombination[3])
         {
             GameEvents.GetFlashLight.Invoke();
-            //DialogueManager.instance.CallDialogue(PlayerScript.instance.RightCombination);
+            PlayerScript.instance.Combination();
         }
         else
         {
             Debug.Log("Combina��o errada, tente novamente");
-            //DialogueManager.instance.CallDialogue(CombinationError);
+            DialogueManager.instance.CallDialogue(CombinationError);
         }
     }
     public void CheckWordPuzzle(string s)

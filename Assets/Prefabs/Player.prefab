@@ -347,17 +347,48 @@ MonoBehaviour:
     sentence: "Hmm?? Essa sensa\xE7...?"
   CutsceneDialogues3:
   - name: Menina
-    sentence: 
+    sentence: "Bunny! Me diz que isso aqui \xE9 mentira!"
   - name: Menina
-    sentence: 
+    sentence: "Me diz que a criatura dessa reportagem n\xE3o \xE9 voc\xEA!"
   - name: Menina
-    sentence: 
+    sentence: "Me diz que todas aquelas sensa\xE7\xF5es que eu senti n\xE3o s\xE3o
+      o que eu to pensando que s\xE3o..."
+  - name: ????
+    sentence: "Sim... \xC9 verdade... Ent\xE3o voc\xEA descobriu... Eu sinto muito..."
   - name: Menina
-    sentence: 
+    sentence: "Por que, Bunny? Eu confiei em voc\xEA..."
+  - name: Bunny
+    sentence: "Porque eu amo brincar contigo! Me desculpa, eu s\xF3 queria ficar
+      brincando sempre... Pra sempre..."
   - name: Menina
-    sentence: 
+    sentence: "Eu tamb\xE9m amo brincar contigo, Bunny! Mas o que voc\xEA fez com
+      aquelas crian\xE7as e comigo \xE9 errado!"
   - name: Menina
-    sentence: 
+    sentence: "Eu tenho outras coisas pra fazer... Eu quero meus pais tamb\xE9m...
+      H\xE1 quanto tempo eu... to nessa situa\xE7\xE3o?"
+  - name: Bunny
+    sentence: "Eu n\xE3o lembro... Uns 2 anos. "
+  - name: Menina
+    sentence: O QUE? DOIS ANOS?
+  - name: Menina
+    sentence: 'BUNNY! ACABE COM ISSO LOGO! '
+  - name: Bunny
+    sentence: "Eu n\xE3o posso... Voc\xEA vai me abandonar"
+  - name: Menina
+    sentence: "Bunny, n\xE3o! Eu n\xE3o vou te abandonar, voc\xEA \xE9 meu melhor
+      amigo!"
+  - name: Bunny
+    sentence: Jura?
+  - name: Menina
+    sentence: Eu juro, de mindinho!
+  - name: Bunny
+    sentence: Eu sinto muito
+  - name: "Mam\xE3e"
+    sentence: Hm?
+  - name: "Mam\xE3e"
+    sentence: "FILHA? TU ACORDOU? VOC\xCA VOLTOU PRA MIM, MINHA PRINCESA"
+  - name: Menina
+    sentence: "Ma... ma... mam\xE3e?"
   SecondPhaseDialogues:
   - name: Menina
     sentence: "Texto aleat\xF3rio"
@@ -378,8 +409,16 @@ MonoBehaviour:
     sentence: "N\xE3o devo ir no s\xF3t\xE3o, \xE9 muito escuro, eu tenho medo."
   - name: Menina
     sentence: "Minha m\xE3e disse que o bicho-pap\xE3o vive l\xE1..."
-  ARightCombination: []
-  CombinationError: []
+  ARightCombination:
+  - name: Menina
+    sentence: "\xC9 ISSO! EU CONSEGUI!"
+  - name: Menina
+    sentence: A princesa mais inteligente de todo o reino!
+  CombinationError:
+  - name: Menina
+    sentence: "Droga! Errei os n\xFAmeros..."
+  - name: Menina
+    sentence: "Pense, voc\xEA \xE9 esperta!"
   PlayerInteracting: 0
 --- !u!136 &4853443133719405707
 CapsuleCollider:

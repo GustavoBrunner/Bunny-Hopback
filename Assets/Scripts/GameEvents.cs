@@ -18,6 +18,7 @@ public class CutsceneDialogue : UnityEvent<int> { }
 public class CamPosUpdate : UnityEvent<int> { }
 
 
+public class StartWalk : UnityEvent { }
 public class GameEvents 
 {
     public static DialogueEvent dialogue = new DialogueEvent();
@@ -52,5 +53,6 @@ public class GameEvents
     public static UnityEvent onDiaryInteracted = new UnityEvent();
 
     public static UnityEvent onEndDiaryInteraction = new UnityEvent();
-    
+
+    public static StartWalk onStartWalkSound = new StartWalk();
 }

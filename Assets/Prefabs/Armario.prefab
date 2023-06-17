@@ -346,9 +346,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactionFeedback: {fileID: 0}
   NonePhaseDialogues:
-  - name: asdsadas
-    sentence: asdasdasdasdasd
+  - name: Menina
+    sentence: "O arm\xE1rio do papai e da mam\xE3e"
+  - name: Menina
+    sentence: 'Eles guardam ferramentas aqui dentro. '
+  - name: Menina
+    sentence: Uma vez eu derrubei as ferramentas em cima de mim
+  - name: Menina
+    sentence: 'Por isso eles colocaram um cadeado hihihi '
   dialogues: []
+  NotCompletedPuzzle:
+  - name: Menina
+    sentence: "Hmmm... Eu preciso de quatro n\xFAmeros..."
+  - name: Menina
+    sentence: "Onde eu posso achar quatro n\xFAmero? "
+  NotCompletedPuzzle2:
+  - name: Menina
+    sentence: "O arm\xE1rio do papa..."
+  - name: Menina
+    sentence: "\xC9 isso, eu preciso dos quatro. Onde ela est\xE1 mesmo?"
 --- !u!65 &1858058136225312080
 BoxCollider:
   m_ObjectHideFlags: 0

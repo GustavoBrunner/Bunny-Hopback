@@ -11,6 +11,12 @@ public class ClueItems : MonoBehaviour, IInteractable
 
     [SerializeField]
     private Dialogue[] ListDialogue;
+    
+    [SerializeField]
+    private Dialogue[] PicDialogue;
+
+    [SerializeField]
+    private Dialogue[] DrawDialogue;
     private void Awake()
     {
         
@@ -28,9 +34,11 @@ public class ClueItems : MonoBehaviour, IInteractable
         {
             case "PicFrame":
                 UiController._instance.ShowPicFrame();
+                DialogueManager.instance.CallDialogue(PicDialogue);
                 break;
             case "Draw":
                 UiController._instance.ShowDraw();
+                DialogueManager.instance.CallDialogue(DrawDialogue);
                 break;
             case "ListClue":
                 UiController._instance.ShowList();

@@ -42,7 +42,7 @@ public class ThirdPuzzleItem : ObjectsScript, IInteractable
             switch (_phase)
             {
                 case "ThirdQuestPhase":
-                    DialogueManager.instance.CallDialogue(this.NonePhaseDialogues);
+                    DialogueManager.instance.CallDialogue(this.ThirdPhaseDialogue);
                     Debug.Log("Primeira fase");
                     GameController._instance.UpdateGamePhase(GameLoop.Second, GamePhase.Final);
                     GetThirdItem();
@@ -74,6 +74,7 @@ public class ThirdPuzzleItem : ObjectsScript, IInteractable
         GameEvents.onItemPicked.Invoke(this.gameObject);
         PlayerScript.instance.ThirdPuzzleItemPicked = true;
         gameObject.SetActive(false);
+        UiController._instance.UpdateTips("\n-> Ache Bunny");
     }
 
     public void HideItemInteraction()

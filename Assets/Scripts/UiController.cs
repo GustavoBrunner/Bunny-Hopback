@@ -40,6 +40,12 @@ public class UiController : MonoBehaviour
     private Animator animator;
 
     private Image tipsImage;
+
+    [SerializeField]
+    private Dialogue[] RightWord;
+
+    [SerializeField]
+    private Dialogue[] WrongWord;
     protected virtual void Awake()
     {
         if(instance)
@@ -104,10 +110,12 @@ public class UiController : MonoBehaviour
         {
             PuzzleInput.text = "Certa resposta!";
             GameEvents.GetSecondItem.Invoke();
+            DialogueManager.instance.CallDialogue(RightWord);
         }
         else
         {
             PuzzleInput.text = "Resposta errada";
+            DialogueManager.instance.CallDialogue(WrongWord);
         }
         
     }

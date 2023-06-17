@@ -336,6 +336,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcf6456cfeb571e4a876634788b6c52a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ListDialogue: []
+  PicDialogue:
+  - name: Menina
+    sentence: Ai ai... O casamento dos meus papais, dia 14/10
+  - name: Menina
+    sentence: "Minha m\xE3e sempre se emociona quando me conta sobre esse dia"
+  - name: Menina
+    sentence: "Foi um dia t\xE3o especial pra eles... Eles ainda comemoram como se
+      tivesse acontecido ontem..."
+  - name: Menina
+    sentence: "Apesar de hoje eles j\xE1 n\xE3o parecerem ser t\xE3o felizes mais."
+  DrawDialogue: []
 --- !u!33 &4822943213404849885
 MeshFilter:
   m_ObjectHideFlags: 0

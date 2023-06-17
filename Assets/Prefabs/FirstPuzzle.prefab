@@ -115,17 +115,11 @@ MonoBehaviour:
   interactionFeedback: {fileID: 0}
   NonePhaseDialogues:
   - name: Menina
-    sentence: 
-  - name: Coelho
-    sentence: 
-  - name: "M\xE3e"
-    sentence: 
-  - name: "M\xE3e"
-    sentence: 
-  - name: "M\xE3e"
-    sentence: 
-  - name: "M\xE3e"
-    sentence: 
+    sentence: Ah o brinquedinho do Bunny.
+  - name: Menina
+    sentence: "Esse \xE9 o preferido dele!"
+  - name: Menina
+    sentence: "Mas eu n\xE3o preciso dele agora."
   NonePhaseDialogue: []
   FirstPhaseDialogue:
   - name: 

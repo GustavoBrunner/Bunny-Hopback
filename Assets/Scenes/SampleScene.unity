@@ -630,7 +630,6 @@ GameObject:
   m_Component:
   - component: {fileID: 27718245}
   - component: {fileID: 27718244}
-  - component: {fileID: 27718243}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: Untagged
@@ -638,14 +637,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &27718243
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 27718241}
-  m_Enabled: 1
 --- !u!20 &27718244
 Camera:
   m_ObjectHideFlags: 0
@@ -710,7 +701,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh43738
+  m_Name: pb_Mesh186664
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -936,7 +927,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh42348
+  m_Name: pb_Mesh-61880
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1489,7 +1480,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh43014
+  m_Name: pb_Mesh186282
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2002,7 +1993,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh42978
+  m_Name: pb_Mesh186256
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2992,7 +2983,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh42906
+  m_Name: pb_Mesh186192
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -3852,7 +3843,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh43432
+  m_Name: pb_Mesh186496
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4678,7 +4669,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh43202
+  m_Name: pb_Mesh186372
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4842,7 +4833,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh42662
+  m_Name: pb_Mesh186036
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -5287,7 +5278,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh43176
+  m_Name: pb_Mesh186346
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -5451,7 +5442,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh42496
+  m_Name: pb_Mesh185942
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -5672,7 +5663,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh42822
+  m_Name: pb_Mesh186132
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -6622,7 +6613,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh28000
+  m_Name: pb_Mesh186570
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -7019,6 +7010,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce8db3b849bd25b4d9031ac789cde59d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RightWord:
+  - name: Menina
+    sentence: "Consegui! hihihi meu pai \xE9 t\xE3o bobo..."
+  - name: Menina
+    sentence: Ele sabe que eu amo bolachinha recheada
+  WrongWord:
+  - name: Menina
+    sentence: Droga... Palavra errada...
+  - name: Menina
+    sentence: "Ser\xE1 que eu vi em todos os lugares?"
 --- !u!1 &890641909
 GameObject:
   m_ObjectHideFlags: 0
@@ -7139,7 +7140,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh42294
+  m_Name: pb_Mesh185858
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -7303,7 +7304,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh43354
+  m_Name: pb_Mesh186448
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -7524,7 +7525,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh43446
+  m_Name: pb_Mesh186510
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -9901,7 +9902,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh35956
+  m_Name: pb_Mesh185964
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -10944,7 +10945,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh42552
+  m_Name: pb_Mesh185988
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -11286,7 +11287,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh42464
+  m_Name: pb_Mesh185920
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -11450,7 +11451,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh43280
+  m_Name: pb_Mesh186410
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -12619,7 +12620,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh42954
+  m_Name: pb_Mesh186232
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -12783,7 +12784,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh43328
+  m_Name: pb_Mesh186434
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -12978,7 +12979,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh42920
+  m_Name: pb_Mesh186206
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -13136,6 +13137,63 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1001 &1375234677
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8862570838819228016, guid: 380431a368668e44db7de734a82803d0, type: 3}
+      propertyPath: m_Name
+      value: AudioController
+      objectReference: {fileID: 0}
+    - target: {fileID: 8862570838819228023, guid: 380431a368668e44db7de734a82803d0, type: 3}
+      propertyPath: m_RootOrder
+      value: 28
+      objectReference: {fileID: 0}
+    - target: {fileID: 8862570838819228023, guid: 380431a368668e44db7de734a82803d0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 898
+      objectReference: {fileID: 0}
+    - target: {fileID: 8862570838819228023, guid: 380431a368668e44db7de734a82803d0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -42
+      objectReference: {fileID: 0}
+    - target: {fileID: 8862570838819228023, guid: 380431a368668e44db7de734a82803d0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 108
+      objectReference: {fileID: 0}
+    - target: {fileID: 8862570838819228023, guid: 380431a368668e44db7de734a82803d0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8862570838819228023, guid: 380431a368668e44db7de734a82803d0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8862570838819228023, guid: 380431a368668e44db7de734a82803d0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8862570838819228023, guid: 380431a368668e44db7de734a82803d0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8862570838819228023, guid: 380431a368668e44db7de734a82803d0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8862570838819228023, guid: 380431a368668e44db7de734a82803d0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8862570838819228023, guid: 380431a368668e44db7de734a82803d0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 380431a368668e44db7de734a82803d0, type: 3}
 --- !u!1 &1380243702
 GameObject:
   m_ObjectHideFlags: 0
@@ -13630,6 +13688,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 927942bce46bb324b9ac55322d2ebbeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RightWord: []
+  WrongWord: []
   img: {fileID: 0}
   puzzleSprites:
   - {fileID: 21300000, guid: 48373ee7deec9224da3648b6001ddf56, type: 3}
@@ -16888,8 +16948,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1563578480}
-  m_LocalRotation: {x: 0.06338541, y: 0.31265217, z: -0.020915225, w: 0.94751966}
-  m_LocalPosition: {x: 17.109377, y: -0.8602586, z: -28.121979}
+  m_LocalRotation: {x: 0.048258897, y: 0.40152514, z: -0.02119274, w: 0.91433007}
+  m_LocalPosition: {x: 0.050586224, y: -0.8602586, z: -30.907059}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -16922,9 +16982,9 @@ Camera:
     height: 1
   near clip plane: 0.1
   far clip plane: 5000
-  field of view: 40
+  field of view: 59.8
   orthographic: 0
-  orthographic size: 10
+  orthographic size: 5
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -17250,7 +17310,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh42684
+  m_Name: pb_Mesh186058
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -17830,6 +17890,17 @@ MonoBehaviour:
   NonePhaseDialogues:
   - name: asdsad
     sentence: asdsadasdsa
+  NotCompletedPuzzle:
+  - name: Menina
+    sentence: Hmmmm... Eu preciso de uma palavra pra abrir a geladeira
+  - name: Menina
+    sentence: Droga, meus pais colocaram esse cadeado porque eu comia todas as bolachinhas
+      da casa...
+  NotCompletedPuzzle2:
+  - name: Menina
+    sentence: "\xC9 claro, eu preciso da palavra. Onde ela estava mesmo?"
+  - name: Menina
+    sentence: Era por aqui...
 --- !u!65 &1628312814
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18291,7 +18362,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh43694
+  m_Name: pb_Mesh186638
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -18455,7 +18526,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh42782
+  m_Name: pb_Mesh186102
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -18966,7 +19037,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh43756
+  m_Name: pb_Mesh186682
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -19990,7 +20061,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh43816
+  m_Name: pb_Mesh186712
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -20524,6 +20595,8 @@ MonoBehaviour:
     sentence: "Ops... Meu pai esqueceu a lista... Algu\xE9m vai se dar mal."
   - name: Menina
     sentence: Hmmm... Bolachinha... Eu amo bolachinha
+  PicDialogue: []
+  DrawDialogue: []
 --- !u!1 &2106948026
 GameObject:
   m_ObjectHideFlags: 0
@@ -23873,7 +23946,7 @@ RectTransform:
   m_GameObject: {fileID: 4190074047575939927}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4201338273837069612}
@@ -24142,10 +24215,6 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6798347158320718880, guid: 344b8bd104602d74cbfdf0c35b430954, type: 3}
-      propertyPath: NonePhaseDialogues.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6798347158320718880, guid: 344b8bd104602d74cbfdf0c35b430954, type: 3}
       propertyPath: ThirdPhaseDialogue.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -24156,14 +24225,6 @@ PrefabInstance:
     - target: {fileID: 6798347158320718880, guid: 344b8bd104602d74cbfdf0c35b430954, type: 3}
       propertyPath: FirstPhaseDialogue.Array.data[0].name
       value: Menina
-      objectReference: {fileID: 0}
-    - target: {fileID: 6798347158320718880, guid: 344b8bd104602d74cbfdf0c35b430954, type: 3}
-      propertyPath: NonePhaseDialogues.Array.data[1].name
-      value: teste
-      objectReference: {fileID: 0}
-    - target: {fileID: 6798347158320718880, guid: 344b8bd104602d74cbfdf0c35b430954, type: 3}
-      propertyPath: NonePhaseDialogues.Array.data[2].name
-      value: teste2
       objectReference: {fileID: 0}
     - target: {fileID: 6798347158320718880, guid: 344b8bd104602d74cbfdf0c35b430954, type: 3}
       propertyPath: ThirdPhaseDialogue.Array.data[0].name
@@ -24184,18 +24245,6 @@ PrefabInstance:
     - target: {fileID: 6798347158320718880, guid: 344b8bd104602d74cbfdf0c35b430954, type: 3}
       propertyPath: FirstPhaseDialogue.Array.data[0].sentence
       value: Ah, achei o brinquedo! Agora posso voltar pra brincar  com o Bunny!
-      objectReference: {fileID: 0}
-    - target: {fileID: 6798347158320718880, guid: 344b8bd104602d74cbfdf0c35b430954, type: 3}
-      propertyPath: NonePhaseDialogues.Array.data[0].sentence
-      value: teste
-      objectReference: {fileID: 0}
-    - target: {fileID: 6798347158320718880, guid: 344b8bd104602d74cbfdf0c35b430954, type: 3}
-      propertyPath: NonePhaseDialogues.Array.data[1].sentence
-      value: teste2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6798347158320718880, guid: 344b8bd104602d74cbfdf0c35b430954, type: 3}
-      propertyPath: NonePhaseDialogues.Array.data[2].sentence
-      value: teste3
       objectReference: {fileID: 0}
     - target: {fileID: 6798347158320718880, guid: 344b8bd104602d74cbfdf0c35b430954, type: 3}
       propertyPath: ThirdPhaseDialogue.Array.data[0].sentence
@@ -24313,6 +24362,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ListDialogue: []
+  PicDialogue: []
+  DrawDialogue: []
 --- !u!114 &3934061282443957994
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24859,7 +24910,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 1
+  m_text: "1\n\nTexto que ajudar\xE1 a menina a descobri o que o coelho fez com ela.
+    Ainda por ser implementado"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -25424,7 +25476,7 @@ PrefabInstance:
       objectReference: {fileID: 157828503}
     - target: {fileID: 4822943213404849880, guid: b2406a9ea476af4468a24edbbf971afb, type: 3}
       propertyPath: m_VersionIndex
-      value: 954
+      value: 963
       objectReference: {fileID: 0}
     - target: {fileID: 4822943213404849884, guid: b2406a9ea476af4468a24edbbf971afb, type: 3}
       propertyPath: m_Mesh
@@ -25476,8 +25528,40 @@ PrefabInstance:
       value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 4853443133719405705, guid: e58128cc14cbc024fa51e2c9b5e65f7e, type: 3}
+      propertyPath: DialoguePlaceHolder.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4853443133719405705, guid: e58128cc14cbc024fa51e2c9b5e65f7e, type: 3}
       propertyPath: FirstPhaseDialogues.Array.size
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4853443133719405705, guid: e58128cc14cbc024fa51e2c9b5e65f7e, type: 3}
+      propertyPath: DialoguePlaceHolder.Array.data[0].name
+      value: Menina
+      objectReference: {fileID: 0}
+    - target: {fileID: 4853443133719405705, guid: e58128cc14cbc024fa51e2c9b5e65f7e, type: 3}
+      propertyPath: DialoguePlaceHolder.Array.data[1].name
+      value: Menina
+      objectReference: {fileID: 0}
+    - target: {fileID: 4853443133719405705, guid: e58128cc14cbc024fa51e2c9b5e65f7e, type: 3}
+      propertyPath: DialoguePlaceHolder.Array.data[0].sentence
+      value: "Aqui ter\xE1 um di\xE1logo ainda por se desenvolver"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4853443133719405705, guid: e58128cc14cbc024fa51e2c9b5e65f7e, type: 3}
+      propertyPath: DialoguePlaceHolder.Array.data[1].sentence
+      value: "Aqui ter\xE1 um di\xE1logo ainda por se desenvolver"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4853443133719405705, guid: e58128cc14cbc024fa51e2c9b5e65f7e, type: 3}
+      propertyPath: ThirdPhaseDialogues.Array.data[0].sentence
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4853443133719405705, guid: e58128cc14cbc024fa51e2c9b5e65f7e, type: 3}
+      propertyPath: SecondPhaseDialogues.Array.data[0].sentence
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4853443133719405705, guid: e58128cc14cbc024fa51e2c9b5e65f7e, type: 3}
+      propertyPath: SecondPhaseDialogues.Array.data[1].sentence
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4853443133719405716, guid: e58128cc14cbc024fa51e2c9b5e65f7e, type: 3}
       propertyPath: m_Name
@@ -25553,6 +25637,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e58128cc14cbc024fa51e2c9b5e65f7e, type: 3}
+--- !u!1 &4853443133589842010 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4853443132633303537, guid: e58128cc14cbc024fa51e2c9b5e65f7e, type: 3}
+  m_PrefabInstance: {fileID: 4853443133589842009}
+  m_PrefabAsset: {fileID: 0}
+--- !u!81 &4853443133589842011
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4853443133589842010}
+  m_Enabled: 1
 --- !u!1 &4884293313421957979
 GameObject:
   m_ObjectHideFlags: 0
@@ -25989,7 +26086,7 @@ RectTransform:
   m_GameObject: {fileID: 5368362963350563848}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7361387338036528535}
@@ -26061,7 +26158,7 @@ RectTransform:
   m_GameObject: {fileID: 5368362963451270710}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 9109982134860592043}
@@ -26262,7 +26359,7 @@ RectTransform:
   m_GameObject: {fileID: 5368362964211211984}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 546669652350618202}
@@ -26693,6 +26790,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ListDialogue: []
+  PicDialogue: []
+  DrawDialogue: []
 --- !u!114 &5621252868582003292
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27090,7 +27189,7 @@ RectTransform:
   m_GameObject: {fileID: 5110751383255331124}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7168407756663881446}
@@ -28216,6 +28315,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ListDialogue: []
+  PicDialogue: []
+  DrawDialogue: []
 --- !u!222 &8634298661101687047
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -28240,20 +28341,36 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8638109427480577206, guid: d338fcc839ff48745802f08d46da0699, type: 3}
+      propertyPath: ThirdPhaseDialogues.Array.data[0].name
+      value: Menina
+      objectReference: {fileID: 0}
+    - target: {fileID: 8638109427480577206, guid: d338fcc839ff48745802f08d46da0699, type: 3}
+      propertyPath: ThirdPhaseDialogues.Array.data[1].name
+      value: Menina
+      objectReference: {fileID: 0}
+    - target: {fileID: 8638109427480577206, guid: d338fcc839ff48745802f08d46da0699, type: 3}
       propertyPath: ThirdPhaseDialogues.Array.data[2].name
-      value: asdasdas
+      value: Menina
       objectReference: {fileID: 0}
     - target: {fileID: 8638109427480577206, guid: d338fcc839ff48745802f08d46da0699, type: 3}
       propertyPath: ThirdPhaseDialogues.Array.data[3].name
-      value: asdasdas
+      value: Menina
+      objectReference: {fileID: 0}
+    - target: {fileID: 8638109427480577206, guid: d338fcc839ff48745802f08d46da0699, type: 3}
+      propertyPath: ThirdPhaseDialogues.Array.data[0].sentence
+      value: "Di\xE1logo a ser implementado"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8638109427480577206, guid: d338fcc839ff48745802f08d46da0699, type: 3}
+      propertyPath: ThirdPhaseDialogues.Array.data[1].sentence
+      value: "Di\xE1logo a ser implementado"
       objectReference: {fileID: 0}
     - target: {fileID: 8638109427480577206, guid: d338fcc839ff48745802f08d46da0699, type: 3}
       propertyPath: ThirdPhaseDialogues.Array.data[2].sentence
-      value: adasdasdasdasd
+      value: "Di\xE1logo a ser implementado"
       objectReference: {fileID: 0}
     - target: {fileID: 8638109427480577206, guid: d338fcc839ff48745802f08d46da0699, type: 3}
       propertyPath: ThirdPhaseDialogues.Array.data[3].sentence
-      value: adasdasdasdasd
+      value: "Di\xE1logo a ser implementado"
       objectReference: {fileID: 0}
     - target: {fileID: 8638109427480577207, guid: d338fcc839ff48745802f08d46da0699, type: 3}
       propertyPath: m_Mesh
