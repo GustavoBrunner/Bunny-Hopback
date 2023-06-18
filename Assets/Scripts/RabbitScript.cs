@@ -141,14 +141,12 @@ public class RabbitScript : MonoBehaviour, IInteractable
                     break;
 
                 case "SecondQuestPhaseLoop2":
-                    DialogueManager.instance.CallDialogue(LastPhaseDialogues);
                     GameController._instance.UpdateGamePhase(GameLoop.Second, GamePhase.StartSecondPuzzle);
                     break;
 
                 case "SecondQuestEndPhaseLoop2": //Libera o armário para ser interagido
                     if (PlayerScript.instance.SecondPuzzleItemPicked)
                     {
-                        DialogueManager.instance.CallDialogue(LastPhaseDialogues);
                         GameController._instance.QuestTurnOnCam();
                         GameEvents.onInventoryClear.Invoke();
                         

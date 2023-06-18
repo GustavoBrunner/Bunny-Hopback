@@ -34,7 +34,8 @@ Transform:
   m_LocalPosition: {x: 18.23, y: 4.7677846, z: -13.42}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 7101654584640958548}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -346,9 +347,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactionFeedback: {fileID: 0}
   NonePhaseDialogues:
-  - name: asdsadas
-    sentence: asdasdasdasdasd
+  - name: Menina
+    sentence: "O arm\xE1rio do papai e da mam\xE3e"
+  - name: Menina
+    sentence: 'Eles guardam ferramentas aqui dentro. '
+  - name: Menina
+    sentence: Uma vez eu derrubei as ferramentas em cima de mim
+  - name: Menina
+    sentence: 'Por isso eles colocaram um cadeado hihihi '
   dialogues: []
+  NotCompletedPuzzle:
+  - name: Menina
+    sentence: "Hmmm... Eu preciso de quatro n\xFAmeros..."
+  - name: Menina
+    sentence: "Onde eu posso achar quatro n\xFAmero? "
+  NotCompletedPuzzle2:
+  - name: Menina
+    sentence: "O arm\xE1rio do papa..."
+  - name: Menina
+    sentence: "\xC9 isso, eu preciso dos quatro. Onde ela est\xE1 mesmo?"
 --- !u!65 &1858058136225312080
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -360,8 +377,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.9108124, y: 4.014345, z: 3.130042}
-  m_Center: {x: 1.4855309, y: 2.0071726, z: -0.9374709}
+  m_Size: {x: 5.38, y: 4.014345, z: 2.92}
+  m_Center: {x: 1.18, y: 2.0071726, z: -1.09}
 --- !u!65 &2251359170355555902
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -375,3 +392,77 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.021782, y: 4.014345, z: 2.502492}
   m_Center: {x: 1.510891, y: 2.0071726, z: -1.251246}
+--- !u!1001 &7279114741756270527
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8929001673943600875}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 4f5226b22a54cb443bbca8d3829929c1, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4f5226b22a54cb443bbca8d3829929c1, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4f5226b22a54cb443bbca8d3829929c1, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4f5226b22a54cb443bbca8d3829929c1, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4f5226b22a54cb443bbca8d3829929c1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.19
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4f5226b22a54cb443bbca8d3829929c1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4f5226b22a54cb443bbca8d3829929c1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.36
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4f5226b22a54cb443bbca8d3829929c1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4f5226b22a54cb443bbca8d3829929c1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4f5226b22a54cb443bbca8d3829929c1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4f5226b22a54cb443bbca8d3829929c1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4f5226b22a54cb443bbca8d3829929c1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4f5226b22a54cb443bbca8d3829929c1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4f5226b22a54cb443bbca8d3829929c1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4f5226b22a54cb443bbca8d3829929c1, type: 3}
+      propertyPath: m_Name
+      value: "Guarda Roupa Crian\xE7a"
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4f5226b22a54cb443bbca8d3829929c1, type: 3}
+--- !u!4 &7101654584640958548 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4f5226b22a54cb443bbca8d3829929c1, type: 3}
+  m_PrefabInstance: {fileID: 7279114741756270527}
+  m_PrefabAsset: {fileID: 0}

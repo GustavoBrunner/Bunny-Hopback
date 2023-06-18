@@ -12,6 +12,13 @@ public class FreezerScript : ObjectsScript , IInteractable
     public GamePhase Phase { get; set; }
     public Transform pos { get => throw new System.NotImplementedException(); set => throw new System.NotImplementedException(); }
 
+
+    [SerializeField]
+    private Dialogue[] NotCompletedPuzzle;
+    
+    [SerializeField]
+    private Dialogue[] NotCompletedPuzzle2;
+
     protected override void Awake()
     {
         base.Awake();
@@ -33,12 +40,12 @@ public class FreezerScript : ObjectsScript , IInteractable
             
             case "SecondQuestPhaseLoop1":
 
-                //DialogueManager.instance.CallDialogue(this.SecondPhaseDialogue);
+                DialogueManager.instance.CallDialogue(this.NotCompletedPuzzle);
                 UiController._instance.UpdateTips("\n-> Deve ter a palavra secreta em algum lugar");
                 break;
             case "SecondQuestPhaseLoop2":
 
-                //DialogueManager.instance.CallDialogue(this.FirstPhaseDialogue);
+                DialogueManager.instance.CallDialogue(this.NotCompletedPuzzle2);
                 UiController._instance.UpdateTips("\n-> ONDE ESTÁ A PALAVRA????");
                 break;
 
@@ -88,4 +95,6 @@ public class FreezerScript : ObjectsScript , IInteractable
     {
         UiController._instance.HideInteractionFeedback();
     }
+
+
 }

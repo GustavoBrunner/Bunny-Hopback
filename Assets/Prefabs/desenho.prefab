@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 4783169583461389370}
   - component: {fileID: 175344125438637462}
   - component: {fileID: 175344125438637465}
+  - component: {fileID: 6670938258139762786}
   m_Layer: 0
   m_Name: desenho
   m_TagString: Untagged
@@ -335,6 +336,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcf6456cfeb571e4a876634788b6c52a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ListDialogue: []
+  PicDialogue: []
+  DrawDialogue:
+  - name: Menina
+    sentence: "hi hi hi hi meu primeiro desenho da nossa fam\xEDlia"
+  - name: Menina
+    sentence: "O Bunny nem tava na fam\xEDlia ainda"
+  - name: Menina
+    sentence: "\xC0s vezes eu sinto que ele olha com um pouco de raiva pra esse desenho"
+  - name: Menina
+    sentence: "Mas... Ele \xE9 um coelho... Claro que \xE9 s\xF3 coisa da minha cabe\xE7a
+      hehehe "
+  - name: Menina
+    sentence: "Eu sou t\xE3o boba. Eu sinto que j\xE1 faz tanto tempo que fiz esse
+      desenho, mas eu fiz ele h\xE1 uns meses s\xF3... "
 --- !u!33 &175344125438637462
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -357,3 +373,16 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!135 &6670938258139762786
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175344125438637467}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.1409733
+  m_Center: {x: 1.5157435, y: -0.45722997, z: 1.1245689}

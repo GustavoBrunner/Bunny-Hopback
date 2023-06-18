@@ -37,10 +37,11 @@ public class DialogueManager : MonoBehaviour
 
     public bool isCutscene;
 
+    
+
     void Awake()
     {
         //dialogues = new Queue<string>();
-        
         if (_instance != null)
         {
             DestroyImmediate(instance);
@@ -60,7 +61,6 @@ public class DialogueManager : MonoBehaviour
         IsDialogueHappn = false;
         isCutscene = false;
     }
-
     public void UpdateDialogue(Dialogue[] d)
     {
         Debug.Log(IsDialogueHappn);
@@ -70,16 +70,10 @@ public class DialogueManager : MonoBehaviour
             StartCoroutine(TypeSentence(d));
         }
     }
-    private void Update()
-    {
-        if( Input.GetKeyDown(KeyCode.Space) && IsDialogueHappn)
-        {
-            StartCoroutine(SkipCooldown());
-        }
-    }
 
     private IEnumerator TypeSentence(Dialogue[] _d)
     {
+        AudioController.instance.PlayKeyboard();
         var actualSentence = _d[index];
         nextsentences = _d;
         this.name.text = actualSentence.name;
@@ -98,14 +92,26 @@ public class DialogueManager : MonoBehaviour
                 if (GameController._instance._phase == "FirstQuestPhaseLoop1" || GameController._instance._phase == "SecondQuestEndPhaseLoop1")
                 {
                     GameController._instance.StartWhiteEffect();
+                    AudioController.instance.ChangeMusicPitch(1);
                 }
                 else if (GameController._instance._phase == "FirstQuestPhaseLoop2" || GameController._instance._phase == "SecondQuestEndPhaseLoop2")
                 {
                     GameController._instance.StartWhiteEffect();
+                    AudioController.instance.ChangeMusicPitch(2);
                 }
                 else if (GameController._instance._phase == GamePhaseChecker.FinalPhase)
                 {
-                    GameController._instance.EndGame();
+
+                    StartCoroutine(GoToFinal());
+                }
+            }
+            if(GameController._instance._phase == GamePhaseChecker.FinalPhase)
+            {
+                var beepSignal = CheckBeepMoment(_d);
+                if (beepSignal)
+                {
+                    AudioController.instance?.PlayBeep();
+                    AudioController.instance.ChangeMusicPitch(3);
                 }
             }
         }
@@ -113,6 +119,7 @@ public class DialogueManager : MonoBehaviour
     public void TurnDialogueOn()
     {
         this.tf.localScale = new Vector3(1, 1, 1);
+        PlayerScript.instance.ChangeMoviment(false);
     }
     public void TurnDialogueOff()
     {
@@ -121,19 +128,23 @@ public class DialogueManager : MonoBehaviour
         index = 0;
         text.text = "";
         IsDialogueHappn = false;
+        PlayerScript.instance.ChangeMoviment(true);
     }
     public void NextBtn()
     {
+        UiController._instance.StartNextBtnCooldown();
         if (index < nextsentences.Length - 1)
         {
             StopAllCoroutines();
             text.text = "";
             index++;
             StartCoroutine(TypeSentence(nextsentences));
+            AudioController.instance.PlayKeyboard();
         }
         else
         {
             TurnDialogueOff();
+            
         }
 
     }
@@ -153,5 +164,25 @@ public class DialogueManager : MonoBehaviour
     {
         yield return new WaitForSeconds(0.1f);
         NextBtn();
+    }
+
+    private bool CheckBeepMoment(Dialogue[] d)
+    {
+        bool flag = false;
+        if (d[index].name == "Mamãe")
+        {
+            flag = true;
+        }
+        else
+        {
+            flag = false;
+        }
+
+        return flag; 
+    }
+    private IEnumerator GoToFinal()
+    {
+        yield return new WaitForSeconds(4f);
+        AudioController.instance.PlayBeep();
     }
 }

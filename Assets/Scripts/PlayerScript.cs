@@ -6,6 +6,7 @@ using UnityEngine.Windows;
 [RequireComponent(typeof(Rigidbody), typeof(CapsuleCollider))]
 public class PlayerScript : MonoBehaviour
 {
+
     private Rigidbody rb;
     [SerializeField]
     private float Vertical;
@@ -63,6 +64,8 @@ public class PlayerScript : MonoBehaviour
 
     [SerializeField]
     private Dialogue[] CombinationError;
+    [SerializeField]
+    private Dialogue[] DialoguePlaceHolder;
 
     private Vector3 initialPosition;
 
@@ -148,11 +151,13 @@ public class PlayerScript : MonoBehaviour
         GameEvents.TransitionDialogue.AddListener(TransitionDialogues);
 
         GameEvents.GetFlashLight.AddListener(GetFlashLight);
+        
     }
     void Update()
     {
         Move("", ActualRoom);
         _playerInTrigger = playerInTrigger;
+
         
 
 
@@ -176,8 +181,10 @@ public class PlayerScript : MonoBehaviour
     }
     private void Move(string _lastRoom, string _actualRoom)
     {
-        //Respons�vel por fazer o jogador se mover pelo mapa
+
         
+        //Respons�vel por fazer o jogador se mover pelo mapa
+        AudioController.instance.UpdatePosition(this.transform);
         if(CanMove)
         {
             ActualRoom = _actualRoom;
@@ -224,10 +231,12 @@ public class PlayerScript : MonoBehaviour
         if (rb.velocity.magnitude > 0)
         {
             playerMoving = true;
+            AudioController.instance.PlayStep();
         }
         else
         {
             playerMoving = false;
+            AudioController.instance.StopStep();
         }
     }
     private void SetAnimation()
@@ -235,6 +244,7 @@ public class PlayerScript : MonoBehaviour
         if(playerMoving)
         { 
             animator.SetTrigger("walking");
+            
         }
         else
         {
@@ -356,7 +366,7 @@ public class PlayerScript : MonoBehaviour
 
     public void TransitionDialogues()
     {
-        DialogueManager.instance.CallDialogue(this.CutsceneDialogues2);
+        DialogueManager.instance.CallDialogue(this.DialoguePlaceHolder);
     }
     public void AtticDialogueTrigger()
     {
@@ -395,5 +405,18 @@ public class PlayerScript : MonoBehaviour
                 break;
         }
     }
+    private IEnumerator WalkSound()
+    {
+        AudioController.instance.PlayStep();
+        yield return new WaitForSeconds(4f);
+    }
 
+    public void Combination()
+    {
+        DialogueManager.instance.CallDialogue(this.ARightCombination);
+    }
+    public void ChangeMoviment(bool m)
+    {
+        this.CanMove = m;
+    }
 }
