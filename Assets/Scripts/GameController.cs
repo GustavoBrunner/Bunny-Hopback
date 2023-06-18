@@ -174,9 +174,11 @@ public class GameController : MonoBehaviour
         GameEvents.onUpdatePhase.Invoke(Loop, phase);
         Debug.Log(GamePhaseChecker.PhaseChecker(Loop, phase));
         DialogueManager.instance.isCutscene = false;
+        PlayerScript.instance.ChangeMoviment(true);
     }
     public void StartCutscene( int cs)
     {
+        PlayerScript.instance.ChangeMoviment(false);
         Debug.Log(mainCam.gameObject.name);
         if (cs == 1)
         {

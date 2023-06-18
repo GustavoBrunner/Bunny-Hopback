@@ -415,4 +415,8 @@ public class PlayerScript : MonoBehaviour
     {
         DialogueManager.instance.CallDialogue(this.ARightCombination);
     }
+    public void ChangeMoviment(bool m)
+    {
+        this.CanMove = m;
+    }
 }

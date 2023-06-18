@@ -46,6 +46,9 @@ public class UiController : MonoBehaviour
 
     [SerializeField]
     private Dialogue[] WrongWord;
+
+    [SerializeField]
+    private Button NextBtn;
     protected virtual void Awake()
     {
         if(instance)
@@ -71,6 +74,7 @@ public class UiController : MonoBehaviour
         isTipsOpened = false;
         animator = GetComponent<Animator>();
         tipsImage = GameObject.Find("TipsImage").GetComponent<Image>();
+        NextBtn = GameObject.Find("Dialogues").GetComponentInChildren<Button>();
         CloseTerminal();
         CloseWordUi();
         HideDraw();
@@ -212,5 +216,16 @@ public class UiController : MonoBehaviour
         {
             tipsText.text = initialText + "\n→ ⍖ ⍗ ⍘ ⍙ ⍚ ⍛ ⍜ ⍝ ⍞ ⍟ ⍠ ⍡ ⍢ ⍣ ⍤  Bunny?";
         }
+    }
+
+    public void StartNextBtnCooldown()
+    {
+        StartCoroutine(NextBtnCooldown());
+    }
+    private IEnumerator NextBtnCooldown()
+    {
+        NextBtn.interactable = false;
+        yield return new WaitForSeconds(2f);
+        NextBtn.interactable = true;
     }
 }

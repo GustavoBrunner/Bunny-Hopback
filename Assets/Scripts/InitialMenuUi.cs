@@ -5,35 +5,40 @@ using UnityEngine.SceneManagement;
 
 public class InitialMenuUi : MonoBehaviour
 {
-
+    private bool firstTimePlaying;
     private Animator animator;
     void Start()
     {
+        firstTimePlaying = true;
         animator = GetComponent<Animator>();
         animator?.SetTrigger("InitialMenu");
-        AudioController.instance.RestartMusic();
+        if(firstTimePlaying)
+        {
+            firstTimePlaying = false;
+            AudioController.instance.RestartMusic();
+        }
     }
 
     public void StartGame()
     {
         SceneManager.LoadScene("SampleScene");
-        AudioController.instance.RestartMusic();
     }
     public void CreditsMenu()
     {
         //ficará o menu de opções, ou créditos
         SceneManager.LoadScene("Credits");
-        AudioController.instance.RestartMusic();
     }
     public void StartMenu()
     {
         SceneManager.LoadScene("InitialMenu");
-        AudioController.instance.RestartMusic();
     }
 
     public void OptionsMenu()
     {
         SceneManager.LoadScene("Options");
-        AudioController.instance.RestartMusic();
+    }
+    public void TutorialMenu()
+    {
+        SceneManager.LoadScene("Tutorial");
     }
 }

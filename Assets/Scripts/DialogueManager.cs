@@ -37,10 +37,11 @@ public class DialogueManager : MonoBehaviour
 
     public bool isCutscene;
 
+    
+
     void Awake()
     {
         //dialogues = new Queue<string>();
-        
         if (_instance != null)
         {
             DestroyImmediate(instance);
@@ -60,7 +61,6 @@ public class DialogueManager : MonoBehaviour
         IsDialogueHappn = false;
         isCutscene = false;
     }
-
     public void UpdateDialogue(Dialogue[] d)
     {
         Debug.Log(IsDialogueHappn);
@@ -68,13 +68,6 @@ public class DialogueManager : MonoBehaviour
         {
             IsDialogueHappn = true;
             StartCoroutine(TypeSentence(d));
-        }
-    }
-    private void Update()
-    {
-        if( Input.GetKeyDown(KeyCode.Space) && IsDialogueHappn)
-        {
-            StartCoroutine(SkipCooldown());
         }
     }
 
@@ -126,6 +119,7 @@ public class DialogueManager : MonoBehaviour
     public void TurnDialogueOn()
     {
         this.tf.localScale = new Vector3(1, 1, 1);
+        PlayerScript.instance.ChangeMoviment(false);
     }
     public void TurnDialogueOff()
     {
@@ -134,9 +128,11 @@ public class DialogueManager : MonoBehaviour
         index = 0;
         text.text = "";
         IsDialogueHappn = false;
+        PlayerScript.instance.ChangeMoviment(true);
     }
     public void NextBtn()
     {
+        UiController._instance.StartNextBtnCooldown();
         if (index < nextsentences.Length - 1)
         {
             StopAllCoroutines();
@@ -148,6 +144,7 @@ public class DialogueManager : MonoBehaviour
         else
         {
             TurnDialogueOff();
+            
         }
 
     }
