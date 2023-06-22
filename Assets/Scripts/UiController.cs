@@ -11,10 +11,10 @@ public class UiController : MonoBehaviour
     private Vector3 UiScaleZero = new Vector3(0f,0f,0f);
     private Vector3 UiScaleOne = new Vector3(1f,1f,1f);
 
-    protected RectTransform FirstPuzzleInput;
-    protected TMP_InputField PuzzleInput;
-    protected string PuzzleAnswer = "Produto";
-    protected RectTransform WordPuzzleTf;
+    private RectTransform FirstPuzzleInput;
+    private TMP_InputField PuzzleInput;
+    private string PuzzleAnswer = "Trakinas";
+    private RectTransform WordPuzzleTf;
     private static UiController instance;
 
     public static UiController _instance 
@@ -35,6 +35,20 @@ public class UiController : MonoBehaviour
 
     private string initialText;
     private bool isTipsOpened;
+
+
+    private Animator animator;
+
+    private Image tipsImage;
+
+    [SerializeField]
+    private Dialogue[] RightWord;
+
+    [SerializeField]
+    private Dialogue[] WrongWord;
+
+    [SerializeField]
+    private Button NextBtn;
     protected virtual void Awake()
     {
         if(instance)
@@ -58,12 +72,15 @@ public class UiController : MonoBehaviour
 
         tipsText = GameObject.Find("TipsUi").GetComponentInChildren<TMP_Text>();
         isTipsOpened = false;
+        animator = GetComponent<Animator>();
+        tipsImage = GameObject.Find("TipsImage").GetComponent<Image>();
+        NextBtn = GameObject.Find("Dialogues").GetComponentInChildren<Button>();
         CloseTerminal();
         CloseWordUi();
         HideDraw();
         HideList();
         HidePicFrame();
-
+        
     }
     
     protected virtual void Start()
@@ -93,14 +110,16 @@ public class UiController : MonoBehaviour
     public void WordPuzzleBtn()
     {
         var answer = PuzzleInput.text;
-        if(answer == PuzzleAnswer)
+        if (answer.ToLower() == PuzzleAnswer.ToLower())
         {
             PuzzleInput.text = "Certa resposta!";
             GameEvents.GetSecondItem.Invoke();
+            DialogueManager.instance.CallDialogue(RightWord);
         }
         else
         {
             PuzzleInput.text = "Resposta errada";
+            DialogueManager.instance.CallDialogue(WrongWord);
         }
         
     }
@@ -153,22 +172,34 @@ public class UiController : MonoBehaviour
 
     public void UpdateTips(string newTip)
     {
-        var tips = tipsText.text;
-        tips += newTip;
-        tipsText.text = tips;
+        if (!tipsText.text.Contains(newTip))
+        {
+            animator.SetTrigger("NewTip");
+            var tips = tipsText.text;
+            tips += newTip;
+            tipsText.text = tips;
+        }
+        else
+        {
+            return;
+        }
     }
 
     public void ShowTips()
     {
-        if(!isTipsOpened)
+        animator.SetBool("TipRead", false);
+        if (!isTipsOpened && !DialogueManager.instance.IsDialogueHappn)
         {
+            animator.SetBool("TipRead", true);
             tipsUi.transform.localScale = Vector3.one;
             isTipsOpened = true;
+            
         }
         else
         {
             tipsUi.transform.localScale = Vector3.zero;
             isTipsOpened = false;
+            animator.SetBool("TipRead", false);
         }
     }
     public void HideTips()
@@ -185,5 +216,16 @@ public class UiController : MonoBehaviour
         {
             tipsText.text = initialText + "\n→ ⍖ ⍗ ⍘ ⍙ ⍚ ⍛ ⍜ ⍝ ⍞ ⍟ ⍠ ⍡ ⍢ ⍣ ⍤  Bunny?";
         }
+    }
+
+    public void StartNextBtnCooldown()
+    {
+        StartCoroutine(NextBtnCooldown());
+    }
+    private IEnumerator NextBtnCooldown()
+    {
+        NextBtn.interactable = false;
+        yield return new WaitForSeconds(2f);
+        NextBtn.interactable = true;
     }
 }

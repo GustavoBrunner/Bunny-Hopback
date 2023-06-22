@@ -40,7 +40,7 @@ public class GameController : MonoBehaviour
     public static bool isThirdPuzzleItemEnabled { get; private set; } = false;
     public static bool isForthPuzzleItemEnabled { get; private set;} = false;
     public static bool isFifthPuzzleItemEnabled { get; private set;} = false;
-    [SerializeField]private int[] RightCombination = new int[] { 0, 2, 3, 4 };
+    [SerializeField]private int[] RightCombination = new int[4];
     
 
     public static event GameControllerHandler FirstPuzzleOpened;
@@ -76,6 +76,11 @@ public class GameController : MonoBehaviour
     public int DialogueToTrigger;
 
     public string _phase;
+
+    
+    [SerializeField]
+    private Dialogue[] CombinationError;
+
     private void Awake()
     {
         if(instance) // impedindo a instância de ser destruída ao carregar outra cena sem multiplicar
@@ -100,8 +105,11 @@ public class GameController : MonoBehaviour
         SceneManager.LoadSceneAsync("Attic", LoadSceneMode.Additive);
 
         //mainCam = GameObject.FindGameObjectWithTag("MainCamera");
-
-
+        RightCombination[0] = 1;
+        RightCombination[1] = 4;
+        RightCombination[2] = 1;
+        RightCombination[3] = 0;
+        Debug.Log($"A combinação correta é: {RightCombination[0]}, {RightCombination[1]}, {RightCombination[2]}, {RightCombination[3]} ");
     }
     public void Start()
     {
@@ -131,17 +139,19 @@ public class GameController : MonoBehaviour
         if (_code[0] == RightCombination[0] && _code[1] == RightCombination[1] && _code[2] == RightCombination[2] && _code[3] == RightCombination[3])
         {
             GameEvents.GetFlashLight.Invoke();
+            PlayerScript.instance.Combination();
         }
         else
         {
             Debug.Log("Combina��o errada, tente novamente");
+            DialogueManager.instance.CallDialogue(CombinationError);
         }
     }
     public void CheckWordPuzzle(string s)
     {
-        if(FreezerScript.puzzleAnswer == s)
+        if(s.Contains(FreezerScript.wordAnswer))
         {
-            GameEvents.GetSecondItem.Invoke();   
+            GameEvents.GetSecondItem.Invoke();
         }
         else
         {
@@ -164,9 +174,11 @@ public class GameController : MonoBehaviour
         GameEvents.onUpdatePhase.Invoke(Loop, phase);
         Debug.Log(GamePhaseChecker.PhaseChecker(Loop, phase));
         DialogueManager.instance.isCutscene = false;
+        PlayerScript.instance.ChangeMoviment(true);
     }
     public void StartCutscene( int cs)
     {
+        PlayerScript.instance.ChangeMoviment(false);
         Debug.Log(mainCam.gameObject.name);
         if (cs == 1)
         {
@@ -182,9 +194,10 @@ public class GameController : MonoBehaviour
 
             camAnimator.SetTrigger("CutsceneStart");
         }
-        else if(cs == 3)
+        else
         {
-
+            DialogueManager.instance.isCutscene = true;
+            camAnimator.SetTrigger("CutsceneStart");
         }
         
     }
@@ -213,9 +226,9 @@ public class GameController : MonoBehaviour
         GameEvents.GetFlashLight.Invoke();
     }
 
-    public void EndQuestFade()
+    public void EndGame()
     {
-
+        SceneManager.LoadScene("EndGame");
     }
 
     public void CheckWichDialogue(string s)
@@ -230,7 +243,7 @@ public class GameController : MonoBehaviour
             DialogueToTrigger = 2;
             StartFirstCustsceneDialogue(DialogueToTrigger);
         }
-        if( s == "FinalPhase")
+        if (s == "FinalPhase")
         {
             DialogueToTrigger = 3;
             StartFirstCustsceneDialogue(DialogueToTrigger);
@@ -251,10 +264,5 @@ public class GameController : MonoBehaviour
         camAnimator.SetTrigger("QuestTurnOnCam");
         DialogueManager.instance.isCutscene = false;
         StopAllCoroutines();
-    }
-    public void GoToEndGame()
-    {
-        //chamado no final do último diálogo, indo para o final do jogo. 
-        //SceneManager.LoadScene()
     }
 }

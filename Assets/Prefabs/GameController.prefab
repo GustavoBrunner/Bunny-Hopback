@@ -45,4 +45,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RightCombination: 01000000020000000300000004000000
+  sceneTest: 5
   positions: []
+  mainCam: {fileID: 0}
+  DialogueToTrigger: 0
+  _phase: 
+  ARightCombination:
+  - name: Menina
+    sentence: Consegui! Finalmente!
+  - name: Menina
+    sentence: Agora posso pegar a lanterna.
+  CombinationError:
+  - name: Menina
+    sentence: "Combina\xE7\xE3o errada..."
+  - name: Menina
+    sentence: Tenho que procurar mais.

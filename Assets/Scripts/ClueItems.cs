@@ -9,6 +9,14 @@ public class ClueItems : MonoBehaviour, IInteractable
     public GamePhase Phase { get ; set ; }
     public Transform pos { get => this.transform; set => throw new System.NotImplementedException(); }
 
+    [SerializeField]
+    private Dialogue[] ListDialogue;
+    
+    [SerializeField]
+    private Dialogue[] PicDialogue;
+
+    [SerializeField]
+    private Dialogue[] DrawDialogue;
     private void Awake()
     {
         
@@ -26,12 +34,16 @@ public class ClueItems : MonoBehaviour, IInteractable
         {
             case "PicFrame":
                 UiController._instance.ShowPicFrame();
+                DialogueManager.instance.CallDialogue(PicDialogue);
                 break;
             case "Draw":
                 UiController._instance.ShowDraw();
+                DialogueManager.instance.CallDialogue(DrawDialogue);
                 break;
             case "ListClue":
                 UiController._instance.ShowList();
+
+                DialogueManager.instance.CallDialogue(ListDialogue);
                 break;
             default:
                 Debug.Log("Objeto desconhecido");

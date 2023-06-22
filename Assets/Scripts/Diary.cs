@@ -7,6 +7,7 @@ public class Diary : MonoBehaviour
     [SerializeField]
     private List<Pages> pages = new List<Pages>();
 
+
     private Pages lastPage { get { return pages[index - 1]; }  }
     public Pages nextPage { get { return pages[index]; } private set { } }
     private int index;
@@ -33,6 +34,7 @@ public class Diary : MonoBehaviour
             nextPage = pages[index];
             nextPage.ShowPage();
             lastPage.ClosePage();
+            GameEvents.onEndDiaryInteraction.Invoke();
         }
         
         
@@ -46,6 +48,7 @@ public class Diary : MonoBehaviour
     {
         index = 0;
         gameObject.transform.localScale = Vector3.one;
+        Debug.Log("Abrindo diário");
         foreach (var page in pages)
         {
             if(page.gameObject.name != "Page")

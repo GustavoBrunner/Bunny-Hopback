@@ -13,6 +13,12 @@ public class ArmarioScript : ObjectsScript, IInteractable
     private Dialogue[] dialogues;
 
     private string _phase;
+
+    [SerializeField]
+    private Dialogue[] NotCompletedPuzzle;
+
+    [SerializeField]
+    private Dialogue[] NotCompletedPuzzle2;
     protected override void Awake()
     {
         base.Awake();
@@ -32,17 +38,15 @@ public class ArmarioScript : ObjectsScript, IInteractable
         if (this.canBeInteracted)
         {
             GameEvents.onCabinet.Invoke();
+            UiController._instance.UpdateTips("\n-> Hm... Onde será que eu posso achar essa senha?");
         }
 
         switch (_phase)
         {
             case "ThirdQuestPhase":
-
-
-
+                DialogueManager.instance.CallDialogue(this.NotCompletedPuzzle);
                 break;
             default:
-
                 DialogueManager.instance.CallDialogue(this.NonePhaseDialogues);
                 break;
         }

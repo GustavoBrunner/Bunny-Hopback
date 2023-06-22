@@ -6,6 +6,7 @@ using UnityEngine.Windows;
 [RequireComponent(typeof(Rigidbody), typeof(CapsuleCollider))]
 public class PlayerScript : MonoBehaviour
 {
+
     private Rigidbody rb;
     [SerializeField]
     private float Vertical;
@@ -42,7 +43,7 @@ public class PlayerScript : MonoBehaviour
 
     [SerializeField]
     private Dialogue[] CutsceneDialogues2;
-    
+
     [SerializeField]
     private Dialogue[] CutsceneDialogues3;
 
@@ -54,9 +55,17 @@ public class PlayerScript : MonoBehaviour
 
     [SerializeField]
     private Dialogue[] LastPhaseDialogues;
-    
+
     [SerializeField]
     private Dialogue[] AtticTriggerDialogues;
+
+    [SerializeField]
+    private Dialogue[] ARightCombination;
+
+    [SerializeField]
+    private Dialogue[] CombinationError;
+    [SerializeField]
+    private Dialogue[] DialoguePlaceHolder;
 
     private Vector3 initialPosition;
 
@@ -142,11 +151,13 @@ public class PlayerScript : MonoBehaviour
         GameEvents.TransitionDialogue.AddListener(TransitionDialogues);
 
         GameEvents.GetFlashLight.AddListener(GetFlashLight);
+        
     }
     void Update()
     {
         Move("", ActualRoom);
         _playerInTrigger = playerInTrigger;
+
         
 
 
@@ -170,8 +181,10 @@ public class PlayerScript : MonoBehaviour
     }
     private void Move(string _lastRoom, string _actualRoom)
     {
-        //Respons�vel por fazer o jogador se mover pelo mapa
+
         
+        //Respons�vel por fazer o jogador se mover pelo mapa
+        AudioController.instance.UpdatePosition(this.transform);
         if(CanMove)
         {
             ActualRoom = _actualRoom;
@@ -218,10 +231,12 @@ public class PlayerScript : MonoBehaviour
         if (rb.velocity.magnitude > 0)
         {
             playerMoving = true;
+            AudioController.instance.PlayStep();
         }
         else
         {
             playerMoving = false;
+            AudioController.instance.StopStep();
         }
     }
     private void SetAnimation()
@@ -229,6 +244,7 @@ public class PlayerScript : MonoBehaviour
         if(playerMoving)
         { 
             animator.SetTrigger("walking");
+            
         }
         else
         {
@@ -299,6 +315,8 @@ public class PlayerScript : MonoBehaviour
     private void GetFlashLight()
     {
         this.hasFlashLight = true;
+        UiController._instance.UpdateTips("\n-> Vá até o sótão!");
+
         //trocará também as sprites da personagem principal.
     }
 
@@ -338,7 +356,7 @@ public class PlayerScript : MonoBehaviour
                 break;
             case 3:
                 DialogueManager.instance.CallDialogue(this.CutsceneDialogues3);
-                Debug.Log("Segundo Diálogo");
+                Debug.Log("Final Diálogo");
                 break;
             default:
                 Debug.Log("Teste Cutscene");
@@ -348,7 +366,7 @@ public class PlayerScript : MonoBehaviour
 
     public void TransitionDialogues()
     {
-        DialogueManager.instance.CallDialogue(this.CutsceneDialogues2);
+        DialogueManager.instance.CallDialogue(this.DialoguePlaceHolder);
     }
     public void AtticDialogueTrigger()
     {
@@ -387,5 +405,18 @@ public class PlayerScript : MonoBehaviour
                 break;
         }
     }
+    private IEnumerator WalkSound()
+    {
+        AudioController.instance.PlayStep();
+        yield return new WaitForSeconds(4f);
+    }
 
+    public void Combination()
+    {
+        DialogueManager.instance.CallDialogue(this.ARightCombination);
+    }
+    public void ChangeMoviment(bool m)
+    {
+        this.CanMove = m;
+    }
 }

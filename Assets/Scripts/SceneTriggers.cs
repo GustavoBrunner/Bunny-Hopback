@@ -58,7 +58,7 @@ public class SceneTriggers : MonoBehaviour
                             StopPlayer();
                         }
                         TurnTriggerOn();
-                        
+                        StartCoroutine(ChangePlayerPosition("Bedroom"));
                     }
                     break;
                 case "BathroomTrigger":
@@ -77,7 +77,7 @@ public class SceneTriggers : MonoBehaviour
                             StopPlayer();
                         }
                         TurnTriggerOn();
-
+                        StartCoroutine(ChangePlayerPosition("Bathroom"));
                     }
                     break;
                 case "ParentsRoomTrigger":
@@ -93,6 +93,7 @@ public class SceneTriggers : MonoBehaviour
                             StopPlayer();
                         }
                         TurnTriggerOn();
+                        StartCoroutine(ChangePlayerPosition("PBedroom"));
                     }
                     break;
                 case "BedroomTriggerExit":
@@ -108,6 +109,7 @@ public class SceneTriggers : MonoBehaviour
                             StopPlayer();
                         }
                         TurnTriggerOn();
+                        StartCoroutine(ChangePlayerPosition("Corridor1"));
                     }
                     break;
                 case "BathroomTriggerExit":
@@ -123,6 +125,7 @@ public class SceneTriggers : MonoBehaviour
                             StopPlayer();
                         }
                         TurnTriggerOn();
+                        StartCoroutine(ChangePlayerPosition("Corridor2"));
                     }
                     break;
                 case "ParentsRoomTriggerExit":
@@ -138,6 +141,7 @@ public class SceneTriggers : MonoBehaviour
                             StopPlayer();
                         }
                         TurnTriggerOn();
+                        StartCoroutine(ChangePlayerPosition("Corridor3"));
                     }
                     break;
                 case "AtticTrigger":
@@ -147,9 +151,12 @@ public class SceneTriggers : MonoBehaviour
                         if(!PlayerScript.instance.hasFlashLight)
                         {
                             PlayerScript.instance.AtticDialogueTrigger();
+                            if(GameController._instance._phase == GamePhaseChecker.ThirdQuestPhase)
+                            UiController._instance.UpdateTips("\n-> Acho que a lanterna ficava no armário dos meus pais");
                         }
                         else
                         {
+                            UiController._instance.UpdateTips("\n-> Preciso achar a banheira");
                             if (BedroomEntered != null)
                             {
                                 BedroomEntered("CameraContainerCorridor", "CameraContainerAttic");
@@ -176,6 +183,7 @@ public class SceneTriggers : MonoBehaviour
                             StopPlayer();
                         }
                         TurnTriggerOn();
+                        StartCoroutine(ChangePlayerPosition("Corridor4"));
                     }
                     break;  
                 default:
@@ -197,7 +205,7 @@ public class SceneTriggers : MonoBehaviour
     }
     private IEnumerator ChangePlayerPosition(string room)
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1.5f);
         PlayerScript.instance.UpdatePosition(room);
     }
 }

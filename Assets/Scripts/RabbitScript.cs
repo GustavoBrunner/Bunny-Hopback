@@ -73,7 +73,7 @@ public class RabbitScript : MonoBehaviour, IInteractable
                     DialogueManager.instance.CallDialogue(this.NonePhaseDialogues);
                     GameController._instance.UpdateGamePhase(GameLoop.None,GamePhase.StartFirstPuzzle);
                     GameController._instance.EnableFirstItemPuzzle();
-                    UiController._instance.UpdateTips("\n-> Onde será que deixei o brinquedo?");
+                    UiController._instance.UpdateTips("\n? Onde será que deixei o brinquedo?");
                     break;
                 case "FirstQuestPhase":
 
@@ -86,12 +86,12 @@ public class RabbitScript : MonoBehaviour, IInteractable
                 case "FirstQuestEndLoop1Phase":
 
                     GameEvents.onInventoryClear.Invoke();
-                    GameController._instance.EndQuestFade();
+                    //GameController._instance.EndQuestFade();
 
                     GameController._instance.QuestTurnOnCam();
                     GameController._instance.UpdateGamePhase(GameLoop.First, GamePhase.StartSecondPuzzle);
-                    UiController._instance.UpdateTips("\n-> Converse com Bunny");
-                break;
+                    UiController._instance.UpdateTips("\n? Converse com Bunny");
+                    break;
                 case "FirstQuestLoop1Phase":
 
                     GameEvents.onInventoryClear.Invoke(); 
@@ -103,12 +103,12 @@ public class RabbitScript : MonoBehaviour, IInteractable
                     DialogueManager.instance.CallDialogue(this.ThirdPhaseDialogues);
                     GameController._instance.UpdateGamePhase(GameLoop.First, GamePhase.StartSecondPuzzle);
 
-                    break;
+                break;
 
                 case "SecondQuestPhaseLoop1": //libera o freezer para ser interagido
                     DialogueManager.instance.CallDialogue(this.ThirdPhaseDialogues);
-                    GameController._instance.EndQuestFade();
-                    UiController._instance.UpdateTips("\n-> Acho que a ração do Bunny fica na geladeira");
+                    //GameController._instance.EndQuestFade();
+                    UiController._instance.UpdateTips("\n? Acho que a ração do Bunny fica na geladeira");
                     //GameController._instance.UpdateGamePhase(GameLoop.First, GamePhase.EndSecondPuzzle);
                 
                     break;
@@ -118,7 +118,7 @@ public class RabbitScript : MonoBehaviour, IInteractable
                         GameEvents.onInventoryClear.Invoke();
                         GameController._instance.StartCutscene(2);
                         GameController._instance.UpdateGamePhase(GameLoop.Second,GamePhase.StartFirstPuzzle);
-                        
+                        UiController._instance.UpdateTips("\n? Tenho que voltar para o Bunny");
                     }
                     else
                     {
@@ -130,38 +130,33 @@ public class RabbitScript : MonoBehaviour, IInteractable
                     DialogueManager.instance.CallDialogue(this.LastPhaseDialogues);
 
                     GameController._instance.UpdateGamePhase(GameLoop.Second, GamePhase.StartFirstPuzzle);
+                    UiController._instance.UpdateTips("\n? !@#$¨#%&*@ BUNNY!");
                     break;
 
                 case "FirstQuestEndLoop2Phase": 
                     GameController._instance.UpdateGamePhase(GameLoop.Second, GamePhase.StartSecondPuzzle);
                     GameEvents.onInventoryClear.Invoke();
                     GameController._instance.QuestTurnOnCam();
+                    UiController._instance.UpdateTips("\n? !@$%#@$@%@# Bunny @$%@#¨#$$%@ geladeira");
                     break;
 
                 case "SecondQuestPhaseLoop2":
-                    DialogueManager.instance.CallDialogue(LastPhaseDialogues);
                     GameController._instance.UpdateGamePhase(GameLoop.Second, GamePhase.StartSecondPuzzle);
-
                     break;
 
                 case "SecondQuestEndPhaseLoop2": //Libera o armário para ser interagido
                     if (PlayerScript.instance.SecondPuzzleItemPicked)
                     {
-                        DialogueManager.instance.CallDialogue(LastPhaseDialogues);
                         GameController._instance.QuestTurnOnCam();
                         GameEvents.onInventoryClear.Invoke();
                         
                         GameController._instance.UpdateGamePhase(GameLoop.Second, GamePhase.StartThirdPuzzle);
-
-                    }
-
                         UiController._instance.UpdateTips("\n? Tenho que mesmo que ir até o sótão...?");
-                    
+                    }
                     break;
                 case "FinalPhase":
-                    GameEvents.onInventoryClear.Invoke();
                     GameController._instance.StartCutscene(3);
-
+                    GameEvents.onInventoryClear.Invoke();
                     break;
 
                 default:
@@ -206,9 +201,5 @@ public class RabbitScript : MonoBehaviour, IInteractable
         UiController._instance.HideInteractionFeedback();
     }
 
-    public void UpdatePositionFinal()
-    {
-        //atualiza a posição pro banheiro, pra terminar o jogo. 
-        //transform.position = new Vector3(24.8f, -0.67f,3f);
-    }
+    
 }
