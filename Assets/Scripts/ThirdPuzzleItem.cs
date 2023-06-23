@@ -23,11 +23,13 @@ public class ThirdPuzzleItem : ObjectsScript, IInteractable
     {
         base.Awake();
         GameEvents.onUpdatePhase.AddListener(UpdateGameState);
-        this.canBeInteracted = true;
+        GameEvents.EnableThirdItem.AddListener(TurnInteractionOn);
+        this.canBeInteracted = false;
     }
     public void HighLightItem()
     {
         UiController._instance.ShowInteractionFeedback();
+        
     }
     private void Update()
     {
@@ -36,6 +38,7 @@ public class ThirdPuzzleItem : ObjectsScript, IInteractable
 
     public void Interact()
     {
+        if (this.canBeInteracted)
         UiController._instance.HideInteractionFeedback();
         if (!DialogueManager.instance.IsDialogueHappn)
         {

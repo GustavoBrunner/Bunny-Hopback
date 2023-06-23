@@ -66,6 +66,14 @@ public class PlayerScript : MonoBehaviour
     private Dialogue[] CombinationError;
     [SerializeField]
     private Dialogue[] DialoguePlaceHolder;
+    
+    [SerializeField]
+    private Dialogue[] TransitionDialogue1;
+    
+    [SerializeField]
+    private Dialogue[] TransitionDialogue2;
+
+
 
     private Vector3 initialPosition;
 
@@ -277,7 +285,8 @@ public class PlayerScript : MonoBehaviour
         {
             if (UnityEngine.Input.GetKeyDown(KeyCode.E))
             {
-                interactable.Interact();
+                interactable?.Interact();
+                Debug.Log(interactable);
             }
         }
         
@@ -341,6 +350,8 @@ public class PlayerScript : MonoBehaviour
     {
         transform.position = initialPosition;
         ActualRoom = "CameraContainerBedroom";
+        interactable = null;
+        Debug.Log(interactable);
     }
 
     public void CutsceneDialogue(int d)
@@ -364,9 +375,20 @@ public class PlayerScript : MonoBehaviour
         }
     }
 
-    public void TransitionDialogues()
+    public void TransitionDialogues(int l)
     {
-        DialogueManager.instance.CallDialogue(this.DialoguePlaceHolder);
+        switch(l)
+        {
+            case 0:
+                DialogueManager.instance.CallDialogue(this.TransitionDialogue1);
+                break;
+            case 1:
+                DialogueManager.instance.CallDialogue(this.TransitionDialogue2);
+                break;
+            default:
+                Debug.Break();
+                break;
+        }
     }
     public void AtticDialogueTrigger()
     {
@@ -413,7 +435,9 @@ public class PlayerScript : MonoBehaviour
 
     public void Combination()
     {
+        DialogueManager.instance.TurnDialogueOff();
         DialogueManager.instance.CallDialogue(this.ARightCombination);
+        
     }
     public void ChangeMoviment(bool m)
     {

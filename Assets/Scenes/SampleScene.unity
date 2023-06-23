@@ -190,7 +190,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1602979}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -11.2356, y: -4.1243, z: 4.51}
+  m_LocalPosition: {x: -11.2356, y: -4.1243, z: 4.62}
   m_LocalScale: {x: 0.25488, y: 0.3, z: 0.5271679}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -357,7 +357,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh54462
+  m_Name: pb_Mesh206280
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -583,7 +583,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-55994
+  m_Name: pb_Mesh-120194
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1075,7 +1075,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh54088
+  m_Name: pb_Mesh205888
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2002,7 +2002,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 60, y: 60}
+  m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &345491137
 MonoBehaviour:
@@ -2011,7 +2011,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 345491135}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -3341,7 +3341,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 485235146}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 17.3107, y: -4.1207, z: 4.87}
+  m_LocalPosition: {x: 17.3107, y: -4.1207, z: 4.77}
   m_LocalScale: {x: 0.27893323, y: 0.1576, z: 0.52785194}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3495,7 +3495,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh54306
+  m_Name: pb_Mesh206126
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -3862,11 +3862,11 @@ MonoBehaviour:
   - m_Vertices: 0f000000
   m_SharedTextures: []
   m_Positions:
-  - {x: -0.0000038146973, y: 0.000100016594, z: -1.5405865}
-  - {x: -0.0000038146973, y: 0.000100016594, z: 11.709414}
+  - {x: -1.0846225, y: 0.000100016594, z: -1.5405946}
+  - {x: -1.0846231, y: 0.000100016594, z: 11.709411}
   - {x: 12.783947, y: 0.000100016594, z: -1.5405865}
   - {x: 12.783947, y: 0.000100016594, z: 11.709414}
-  - {x: -0.0000038146973, y: 0.000100016594, z: 11.709414}
+  - {x: -1.0846231, y: 0.000100016594, z: 11.709411}
   - {x: -0.0000046864834, y: 0.000103354454, z: 18.104118}
   - {x: 12.783947, y: 0.000100016594, z: 11.709414}
   - {x: 12.783949, y: 0.000103354454, z: 18.104113}
@@ -3879,11 +3879,11 @@ MonoBehaviour:
   - {x: 25.081276, y: 0.00010120869, z: 11.709414}
   - {x: 25.08128, y: 0.00010454655, z: 18.104107}
   m_Textures0:
-  - {x: -0.0000038146973, y: -1.5405865}
-  - {x: -0.0000038146973, y: 11.709414}
+  - {x: -1.0846225, y: -1.5405946}
+  - {x: -1.0846231, y: 11.709411}
   - {x: 12.783947, y: -1.5405865}
   - {x: 12.783947, y: 11.709414}
-  - {x: -0.0000038146973, y: 11.709414}
+  - {x: -1.0846231, y: 11.709411}
   - {x: -0.0000046864834, y: 18.104118}
   - {x: 12.783947, y: 11.709414}
   - {x: 12.783949, y: 18.104113}
@@ -3902,9 +3902,9 @@ MonoBehaviour:
   - {x: 1, y: 0, z: 0, w: -1}
   - {x: 1, y: 0, z: 0, w: -1}
   - {x: 1, y: 0, z: 0, w: -1}
-  - {x: 1, y: 0, z: 0, w: -1}
-  - {x: 1, y: 1.168165e-13, z: 0, w: -1}
-  - {x: 1, y: 1.168165e-13, z: 0, w: -1}
+  - {x: 1, y: -1.07680514e-13, z: 3.537022e-27, w: -1}
+  - {x: 1, y: 6.2976236e-14, z: 3.5370243e-27, w: -1}
+  - {x: 1, y: 6.2976236e-14, z: 3.5370243e-27, w: -1}
   - {x: 1, y: 2.33633e-13, z: 0, w: -1}
   - {x: 1, y: 0.000000096939175, z: 0, w: -1}
   - {x: 1, y: 0.000000096939175, z: 0, w: -1}
@@ -3923,7 +3923,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 622751362}
-  m_VersionIndex: 2467
+  m_VersionIndex: 2517
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -4321,7 +4321,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh54196
+  m_Name: pb_Mesh206004
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4485,7 +4485,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh53852
+  m_Name: pb_Mesh205644
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4496,8 +4496,8 @@ Mesh:
     firstVertex: 0
     vertexCount: 9
     localAABB:
-      m_Center: {x: 12.540638, y: 0.00010228157, z: 8.281763}
-      m_Extent: {x: 12.540642, y: 0.0000022649765, z: 9.822355}
+      m_Center: {x: 11.998328, y: 0.00010228157, z: 8.281762}
+      m_Extent: {x: 13.082952, y: 0.0000022649765, z: 9.822356}
   m_Shapes:
     vertices: []
     shapes: []
@@ -4576,7 +4576,7 @@ Mesh:
       format: 0
       dimension: 0
     m_DataSize: 504
-    _typelessdata: 000080b600c0d138f031c5bf000000000000803f000000000000803f0000000000000000000080bf000080b6f031c5bf1a467b3f92d7a33c000080b600c0d138c2593b41000000000000803f000000000000803f0000000000000000000080bf000080b6c2593b4119467b3fae28073f0c8b4c4100c0d138f031c5bf000000000000803f000000000000803f0000000000000000000080bf0c8b4c41f031c5bf3f9efb3e70d7a33c0c8b4c4100c0d138c2593b41000000000000803f000000000000803f0000000000000000000080bf0c8b4c41c2593b41409efb3eae28073f96409db600c0d8383cd59041108603aa0000803fb21d0cb50000803f1086032a00000000000080bf96409db63cd590411a467b3f02eb453f0e8b4c4100c0d83839d59041108683aa0000803fb61d0cb50000803f1086832a00000000000080bf0e8b4c4139d590413e9efb3e02eb453f74a6c8410040d4381a32c5bfe02cd0b30000803f000000000000803fe02cd03300000000000080bf74a6c8411a32c5bf83d7a33c0bd7a33c74a6c8410040d438c2593b41e02cd0b30000803f000000000000803fe02cd03300000000000080bf74a6c841c2593b417dd7a33ca828073f76a6c8410040db3836d59041002dd0b30000803fbd1d0cb50000803f002dd03300000000000080bf76a6c84136d590410bd7a33cfaea453f
+    _typelessdata: e9d48abf00c0d1383432c5bf000000000000803f000000000000803f0000000000000000000080bfe9d48abf3432c5bf14467b3f0bd7a33ceed48abf00c0d138bf593b41000000000000803f000000000000803f0000000000000000000080bfeed48abfbf593b411a467b3fb6c4013f0c8b4c4100c0d138f031c5bf000000000000803f000000000000803f0000000000000000000080bf0c8b4c41f031c5bfbd9cf13e9bd7a33c0c8b4c4100c0d138c2593b41000000000000803f000000000000803f0000000000000000000080bf0c8b4c41c2593b41cc9cf13eb9c4013f96409db600c0d8383cd5904154cf8da90000803fb01d0cb50000803f54cf8d29b01d8c13000080bf96409db63cd590410312713f19ed3d3f0e8b4c4100c0d83839d59041108683aa0000803fb61d0cb50000803f1086832a00000000000080bf0e8b4c4139d59041cb9cf13e14ed3d3f74a6c8410040d4381a32c5bfe02cd0b30000803f000000000000803fe02cd03300000000000080bf74a6c8411a32c5bf0bd7a33cf2d7a33c74a6c8410040d438c2593b41e02cd0b30000803f000000000000803fe02cd03300000000000080bf74a6c841c2593b41d2d7a33cbac4013f76a6c8410040db3836d59041002dd0b30000803fbd1d0cb50000803f002dd03300000000000080bf76a6c84136d590418dd7a33c0eed3d3f
   m_CompressedMesh:
     m_Vertices:
       m_NumItems: 0
@@ -4630,8 +4630,8 @@ Mesh:
       m_BitSize: 0
     m_UVInfo: 0
   m_LocalAABB:
-    m_Center: {x: 12.540638, y: 0.00010228157, z: 8.281763}
-    m_Extent: {x: 12.540642, y: 0.0000022649765, z: 9.822355}
+    m_Center: {x: 11.998328, y: 0.00010228157, z: 8.281762}
+    m_Extent: {x: 13.082952, y: 0.0000022649765, z: 9.822356}
   m_MeshUsageFlags: 0
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
@@ -4930,7 +4930,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh54434
+  m_Name: pb_Mesh206252
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -5094,7 +5094,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh53750
+  m_Name: pb_Mesh205530
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -5315,7 +5315,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh98506
+  m_Name: pb_Mesh205756
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -6606,7 +6606,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh54366
+  m_Name: pb_Mesh206184
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -6928,10 +6928,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -7042,7 +7042,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 890641909}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 4.7881, y: -4.13, z: 4.87}
+  m_LocalPosition: {x: 4.7881, y: -4.13, z: 4.82}
   m_LocalScale: {x: 0.25162798, y: 0.19, z: 0.52614397}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7134,7 +7134,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh98824
+  m_Name: pb_Mesh206078
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -7473,7 +7473,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh98602
+  m_Name: pb_Mesh205852
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -9140,7 +9140,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh53774
+  m_Name: pb_Mesh205554
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -9407,8 +9407,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1041035920}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 4.7546, y: -4.05, z: 4.59}
-  m_LocalScale: {x: 0.25492, y: 0.23, z: 0.54214394}
+  m_LocalPosition: {x: 4.8285, y: -3.955, z: 4.59}
+  m_LocalScale: {x: 0.24013464, y: 0.23, z: 0.5611732}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 805364630}
@@ -9920,7 +9920,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh53800
+  m_Name: pb_Mesh205592
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -10586,7 +10586,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh53730
+  m_Name: pb_Mesh205510
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -10750,7 +10750,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh54234
+  m_Name: pb_Mesh206042
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -11412,8 +11412,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1266792534}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 17.3281, y: -4.065, z: 4.57}
-  m_LocalScale: {x: 0.27550548, y: 0.16526, z: 0.53898484}
+  m_LocalPosition: {x: 17.444, y: -4.0778, z: 4.63}
+  m_LocalScale: {x: 0.25233546, y: 0.16526, z: 0.5364516}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 805364630}
@@ -12012,7 +12012,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh54026
+  m_Name: pb_Mesh205826
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -12668,8 +12668,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 38.02997, y: -5.750244}
-  m_SizeDelta: {x: -76.06004, y: -11.499532}
+  m_AnchoredPosition: {x: 38.02997, y: -22.43024}
+  m_SizeDelta: {x: -76.06004, y: -44.859516}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1393190621
 MonoBehaviour:
@@ -12691,7 +12691,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: -2413806693520163455, guid: d9cd4f88bd0f1c242a784c2c6bb11b1c, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -12726,9 +12726,9 @@ MonoBehaviour:
   NextBtn: {fileID: 0}
   img: {fileID: 0}
   puzzleSprites:
-  - {fileID: 21300000, guid: 48373ee7deec9224da3648b6001ddf56, type: 3}
-  - {fileID: 21300000, guid: d89642a61b4cc6e498c052af0405f0bd, type: 3}
-  - {fileID: 21300000, guid: 2944d3fdf0fb29c4f8cf73674ae437a8, type: 3}
+  - {fileID: 21300000, guid: cb7ce64b23f490049b56c0f2958af6ea, type: 3}
+  - {fileID: 21300000, guid: f0fe5781e67a96c488214f23126e9c78, type: 3}
+  - {fileID: 21300000, guid: 7a01ced64dff77a4788682160d6bff8b, type: 3}
   - {fileID: 21300000, guid: 0d15d06e24f395c4892dd3506d54d9f9, type: 3}
   - {fileID: 21300000, guid: f00bcd431c4045b49a5b5d6912c95d4b, type: 3}
 --- !u!1001 &1449254289
@@ -15783,7 +15783,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh53874
+  m_Name: pb_Mesh205666
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -15951,7 +15951,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1611337020}
   - component: {fileID: 1611337022}
-  - component: {fileID: 1611337021}
   m_Layer: 5
   m_Name: Slot1
   m_TagString: Untagged
@@ -15978,35 +15977,8 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 53, y: -90}
-  m_SizeDelta: {x: 80, y: 80}
+  m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1611337021
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1611337019}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.8490566, g: 0.8490566, b: 0.8490566, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Texture: {fileID: 0}
-  m_UVRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
 --- !u!222 &1611337022
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -16374,6 +16346,11 @@ MonoBehaviour:
     sentence: "\xC9 claro, eu preciso da palavra. Onde ela estava mesmo?"
   - name: Menina
     sentence: Era por aqui...
+  NonePhaseDialogue:
+  - name: Menina
+    sentence: Aff... Meus pais trancaram a geladeira antes de sair
+  - name: Menina
+    sentence: "Mas eu tamb\xE9m n\xE3o preciso de nada que esteja ali ainda... hihi"
 --- !u!65 &1628312814
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16976,7 +16953,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh53920
+  m_Name: pb_Mesh205712
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -17487,7 +17464,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh103054
+  m_Name: pb_Mesh206298
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -18523,7 +18500,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh54510
+  m_Name: pb_Mesh206326
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -19684,7 +19661,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -39}
   m_SizeDelta: {x: 1191.3, y: 132.46}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &432706648792560017
@@ -20040,7 +20017,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1180667628711351326, guid: 653b38e958eedf94c998029789695f8d, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1180667628711351778, guid: 653b38e958eedf94c998029789695f8d, type: 3}
       propertyPath: m_Name
@@ -20052,7 +20029,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1180667628711351779, guid: 653b38e958eedf94c998029789695f8d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 53.99
+      value: 64.1
       objectReference: {fileID: 0}
     - target: {fileID: 1180667628711351779, guid: 653b38e958eedf94c998029789695f8d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -20431,7 +20408,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 533, y: -45}
+  m_AnchoredPosition: {x: 533, y: 77}
   m_SizeDelta: {x: 153.2, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1501989063416585748
@@ -22074,7 +22051,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.4245283, g: 0.4245283, b: 0.4245283, a: 0.5019608}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.39215687}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -22207,8 +22184,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -464, y: 115}
-  m_SizeDelta: {x: -997.20984, y: -230.86497}
+  m_AnchoredPosition: {x: -464, y: 74}
+  m_SizeDelta: {x: -997.20984, y: -168.13249}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2659616915257489324
 MonoBehaviour:
@@ -22223,14 +22200,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.6156863}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: -2413806693520163455, guid: d9cd4f88bd0f1c242a784c2c6bb11b1c, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -22840,7 +22817,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -23112,8 +23089,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 824.56494, y: 448.83}
-  m_SizeDelta: {x: -1713.1301, y: -897.66}
+  m_AnchoredPosition: {x: 824.56494, y: 421.43}
+  m_SizeDelta: {x: -1713.1301, y: -952.45996}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &4190074047575939927
 GameObject:
@@ -23556,14 +23533,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8679245, g: 0.7995569, b: 0.55268776, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d89642a61b4cc6e498c052af0405f0bd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2fd9dca6b9fd75d469a9fef97e201b39, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -23974,11 +23951,79 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4853443133719405705, guid: e58128cc14cbc024fa51e2c9b5e65f7e, type: 3}
+      propertyPath: TransitionDialogue1.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4853443133719405705, guid: e58128cc14cbc024fa51e2c9b5e65f7e, type: 3}
+      propertyPath: TransitionDialogue2.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4853443133719405705, guid: e58128cc14cbc024fa51e2c9b5e65f7e, type: 3}
       propertyPath: DialoguePlaceHolder.Array.data[0].name
       value: Menina
       objectReference: {fileID: 0}
     - target: {fileID: 4853443133719405705, guid: e58128cc14cbc024fa51e2c9b5e65f7e, type: 3}
       propertyPath: DialoguePlaceHolder.Array.data[1].name
+      value: Menina
+      objectReference: {fileID: 0}
+    - target: {fileID: 4853443133719405705, guid: e58128cc14cbc024fa51e2c9b5e65f7e, type: 3}
+      propertyPath: TransitionDialogue1.Array.data[0].name
+      value: Menina
+      objectReference: {fileID: 0}
+    - target: {fileID: 4853443133719405705, guid: e58128cc14cbc024fa51e2c9b5e65f7e, type: 3}
+      propertyPath: TransitionDialogue1.Array.data[1].name
+      value: Menina
+      objectReference: {fileID: 0}
+    - target: {fileID: 4853443133719405705, guid: e58128cc14cbc024fa51e2c9b5e65f7e, type: 3}
+      propertyPath: TransitionDialogue1.Array.data[2].name
+      value: Menina
+      objectReference: {fileID: 0}
+    - target: {fileID: 4853443133719405705, guid: e58128cc14cbc024fa51e2c9b5e65f7e, type: 3}
+      propertyPath: TransitionDialogue1.Array.data[3].name
+      value: Menina
+      objectReference: {fileID: 0}
+    - target: {fileID: 4853443133719405705, guid: e58128cc14cbc024fa51e2c9b5e65f7e, type: 3}
+      propertyPath: TransitionDialogue1.Array.data[4].name
+      value: Menina
+      objectReference: {fileID: 0}
+    - target: {fileID: 4853443133719405705, guid: e58128cc14cbc024fa51e2c9b5e65f7e, type: 3}
+      propertyPath: TransitionDialogue1.Array.data[5].name
+      value: Menina
+      objectReference: {fileID: 0}
+    - target: {fileID: 4853443133719405705, guid: e58128cc14cbc024fa51e2c9b5e65f7e, type: 3}
+      propertyPath: TransitionDialogue1.Array.data[6].name
+      value: Menina
+      objectReference: {fileID: 0}
+    - target: {fileID: 4853443133719405705, guid: e58128cc14cbc024fa51e2c9b5e65f7e, type: 3}
+      propertyPath: TransitionDialogue2.Array.data[0].name
+      value: Menina
+      objectReference: {fileID: 0}
+    - target: {fileID: 4853443133719405705, guid: e58128cc14cbc024fa51e2c9b5e65f7e, type: 3}
+      propertyPath: TransitionDialogue2.Array.data[1].name
+      value: Menina
+      objectReference: {fileID: 0}
+    - target: {fileID: 4853443133719405705, guid: e58128cc14cbc024fa51e2c9b5e65f7e, type: 3}
+      propertyPath: TransitionDialogue2.Array.data[2].name
+      value: Menina
+      objectReference: {fileID: 0}
+    - target: {fileID: 4853443133719405705, guid: e58128cc14cbc024fa51e2c9b5e65f7e, type: 3}
+      propertyPath: TransitionDialogue2.Array.data[3].name
+      value: Menina
+      objectReference: {fileID: 0}
+    - target: {fileID: 4853443133719405705, guid: e58128cc14cbc024fa51e2c9b5e65f7e, type: 3}
+      propertyPath: TransitionDialogue2.Array.data[4].name
+      value: Menina
+      objectReference: {fileID: 0}
+    - target: {fileID: 4853443133719405705, guid: e58128cc14cbc024fa51e2c9b5e65f7e, type: 3}
+      propertyPath: TransitionDialogue2.Array.data[5].name
+      value: Menina
+      objectReference: {fileID: 0}
+    - target: {fileID: 4853443133719405705, guid: e58128cc14cbc024fa51e2c9b5e65f7e, type: 3}
+      propertyPath: TransitionDialogue2.Array.data[6].name
+      value: Menina
+      objectReference: {fileID: 0}
+    - target: {fileID: 4853443133719405705, guid: e58128cc14cbc024fa51e2c9b5e65f7e, type: 3}
+      propertyPath: TransitionDialogue2.Array.data[7].name
       value: Menina
       objectReference: {fileID: 0}
     - target: {fileID: 4853443133719405705, guid: e58128cc14cbc024fa51e2c9b5e65f7e, type: 3}
@@ -23992,6 +24037,67 @@ PrefabInstance:
     - target: {fileID: 4853443133719405705, guid: e58128cc14cbc024fa51e2c9b5e65f7e, type: 3}
       propertyPath: ThirdPhaseDialogues.Array.data[0].sentence
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4853443133719405705, guid: e58128cc14cbc024fa51e2c9b5e65f7e, type: 3}
+      propertyPath: TransitionDialogue1.Array.data[0].sentence
+      value: Voltei, Bunny! Vamos brincar!
+      objectReference: {fileID: 0}
+    - target: {fileID: 4853443133719405705, guid: e58128cc14cbc024fa51e2c9b5e65f7e, type: 3}
+      propertyPath: TransitionDialogue1.Array.data[1].sentence
+      value: "Vai Bunny, corre atr\xE1s do brinquedo!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4853443133719405705, guid: e58128cc14cbc024fa51e2c9b5e65f7e, type: 3}
+      propertyPath: TransitionDialogue1.Array.data[2].sentence
+      value: "N\xE3o! N\xE3o me morde, seu malvado!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4853443133719405705, guid: e58128cc14cbc024fa51e2c9b5e65f7e, type: 3}
+      propertyPath: TransitionDialogue1.Array.data[3].sentence
+      value: "Ai ai... To cansada j\xE1..."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4853443133719405705, guid: e58128cc14cbc024fa51e2c9b5e65f7e, type: 3}
+      propertyPath: TransitionDialogue1.Array.data[4].sentence
+      value: "Que sensa\xE7\xE3o estranha... Acho que \xE9 s\xF3 o cansa\xE7o..."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4853443133719405705, guid: e58128cc14cbc024fa51e2c9b5e65f7e, type: 3}
+      propertyPath: TransitionDialogue1.Array.data[5].sentence
+      value: Hmmmm... To com fome, o que acha de a gente comer algo, Bunny?
+      objectReference: {fileID: 0}
+    - target: {fileID: 4853443133719405705, guid: e58128cc14cbc024fa51e2c9b5e65f7e, type: 3}
+      propertyPath: TransitionDialogue1.Array.data[6].sentence
+      value: "Hihihi... t\xE1 com fome, n\xE9? Vou l\xE1 pegar sua ra\xE7\xE3o, espertinho."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4853443133719405705, guid: e58128cc14cbc024fa51e2c9b5e65f7e, type: 3}
+      propertyPath: TransitionDialogue2.Array.data[0].sentence
+      value: Nossa Bunny, tu ficou com fome mesmo, hein?
+      objectReference: {fileID: 0}
+    - target: {fileID: 4853443133719405705, guid: e58128cc14cbc024fa51e2c9b5e65f7e, type: 3}
+      propertyPath: TransitionDialogue2.Array.data[1].sentence
+      value: "Cuidado, tu vai derramar toda a ra\xE7\xE3o!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4853443133719405705, guid: e58128cc14cbc024fa51e2c9b5e65f7e, type: 3}
+      propertyPath: TransitionDialogue2.Array.data[2].sentence
+      value: "Cuidado, tu vai derramar toda a ra\xE7\xE3o!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4853443133719405705, guid: e58128cc14cbc024fa51e2c9b5e65f7e, type: 3}
+      propertyPath: TransitionDialogue2.Array.data[3].sentence
+      value: "Olha a sujeira que tu t\xE1 fazendo. Bunny Feio!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4853443133719405705, guid: e58128cc14cbc024fa51e2c9b5e65f7e, type: 3}
+      propertyPath: TransitionDialogue2.Array.data[4].sentence
+      value: 'Aff, agora eu vou ter que limpar tud... '
+      objectReference: {fileID: 0}
+    - target: {fileID: 4853443133719405705, guid: e58128cc14cbc024fa51e2c9b5e65f7e, type: 3}
+      propertyPath: TransitionDialogue2.Array.data[5].sentence
+      value: "Nossa, que sensa\xE7\xE3o estranha... O que ser\xE1 que t\xE1 acontecendo
+        comigo?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4853443133719405705, guid: e58128cc14cbc024fa51e2c9b5e65f7e, type: 3}
+      propertyPath: TransitionDialogue2.Array.data[6].sentence
+      value: "Mas agora eu vou precisar limpar tudo, Bunny! E tu t\xE1 fedendo, tamb\xE9m!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4853443133719405705, guid: e58128cc14cbc024fa51e2c9b5e65f7e, type: 3}
+      propertyPath: TransitionDialogue2.Array.data[7].sentence
+      value: "Como castigo vou te dar banho, tamb\xE9m hihihi"
       objectReference: {fileID: 0}
     - target: {fileID: 4853443133719405705, guid: e58128cc14cbc024fa51e2c9b5e65f7e, type: 3}
       propertyPath: SecondPhaseDialogues.Array.data[0].sentence
@@ -25666,8 +25772,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -394}
-  m_SizeDelta: {x: -660, y: -920.97}
+  m_AnchoredPosition: {x: 0, y: -360.3075}
+  m_SizeDelta: {x: -660, y: -853.58496}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &6300720306874619730
 GameObject:
@@ -25855,7 +25961,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Espa\xE7o \n    ->"
+  m_text: "Pr\xF3ximo"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -26781,7 +26887,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8638109427480577206, guid: d338fcc839ff48745802f08d46da0699, type: 3}
       propertyPath: ThirdPhaseDialogues.Array.size
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8638109427480577206, guid: d338fcc839ff48745802f08d46da0699, type: 3}
       propertyPath: ThirdPhaseDialogues.Array.data[0].name
@@ -26801,11 +26907,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8638109427480577206, guid: d338fcc839ff48745802f08d46da0699, type: 3}
       propertyPath: ThirdPhaseDialogues.Array.data[0].sentence
-      value: "Di\xE1logo a ser implementado"
+      value: "Calma, Bunny! J\xE1 vou l\xE1 pegar sua ra\xE7\xE3o!"
       objectReference: {fileID: 0}
     - target: {fileID: 8638109427480577206, guid: d338fcc839ff48745802f08d46da0699, type: 3}
       propertyPath: ThirdPhaseDialogues.Array.data[1].sentence
-      value: "Di\xE1logo a ser implementado"
+      value: "Voc\xEA \xE9 muito ansioso..."
       objectReference: {fileID: 0}
     - target: {fileID: 8638109427480577206, guid: d338fcc839ff48745802f08d46da0699, type: 3}
       propertyPath: ThirdPhaseDialogues.Array.data[2].sentence
@@ -26989,7 +27095,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &8845546092981807622
 GameObject:

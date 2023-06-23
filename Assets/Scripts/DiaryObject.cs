@@ -13,6 +13,8 @@ public class DiaryObject : MonoBehaviour, IInteractable
     [SerializeField]
     private Dialogue[] secondDiaryDialogue;
 
+    
+
     private void Awake()
     {
         GameEvents.onEndDiaryInteraction.AddListener(LastDiaryDialogue);
@@ -30,9 +32,10 @@ public class DiaryObject : MonoBehaviour, IInteractable
     public void Interact()
     {
         GameEvents.onDiaryInteracted.Invoke();
-        gameObject.SetActive(false);
+        GameObject.Destroy(gameObject);
         Debug.Log("interagindo com Diário");
         HideItemInteraction();
+        GameEvents.EnableThirdItem.Invoke();
         //DialogueManager.instance.CallDialogue(diaryDialogue);
     }
 
@@ -44,4 +47,5 @@ public class DiaryObject : MonoBehaviour, IInteractable
     {
         DialogueManager.instance.CallDialogue(secondDiaryDialogue);
     }
+
 }

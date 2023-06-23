@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3691318943978957127}
   - component: {fileID: 3691318943978957126}
   - component: {fileID: 6798347158320718880}
+  - component: {fileID: 3749073199596318304}
   m_Layer: 0
   m_Name: FirstPuzzle
   m_TagString: Untagged
@@ -107,13 +108,43 @@ MonoBehaviour:
     sentence: "Mas eu n\xE3o preciso dele agora."
   NonePhaseDialogue: []
   FirstPhaseDialogue:
+  - name: Menina
+    sentence: Achei! Sabia que tinha deixado por aqui.
+  - name: Menina
+    sentence: Agora posso voltar pra brincar com o Bunny.
+  - name: Menina
+    sentence: "Ele deve estar ansioso j\xE1. hehe "
+  SecondPhaseDialogue:
   - name: 
     sentence: 
-  - name: 
-    sentence: 
-  SecondPhaseDialogue: []
-  ThirdPhaseDialogue: []
+  - name: Menina
+    sentence: Algo me diz que o Bunny quer brincar.
+  - name: Menina
+    sentence: "Ent\xE3o j\xE1 vou levar esse brinquedinho... hehe"
+  - name: Menina
+    sentence: "Que estranho, sensa\xE7\xE3o de que isso j\xE1 aconteceu... Acho que
+      estou doida."
+  ThirdPhaseDialogue:
+  - name: Menina
+    sentence: "Que estranho, eu tenho certeza que j\xE1 passei por isso antes... "
+  - name: Menina
+    sentence: "Que dor de cabe\xE7a... N\xE3o estou bem..."
+  - name: Menina
+    sentence: "Por que isso est\xE1 acontecendo comigo?"
   _phase: 
+--- !u!65 &3749073199596318304
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3691318943978957123}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.8594232, y: 1.7570503, z: 2.2375586}
+  m_Center: {x: -0.11556411, y: 0.61892086, z: -0.6187784}
 --- !u!1001 &2863579573329842375
 PrefabInstance:
   m_ObjectHideFlags: 0

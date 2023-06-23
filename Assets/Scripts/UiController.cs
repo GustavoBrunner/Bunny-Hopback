@@ -114,11 +114,13 @@ public class UiController : MonoBehaviour
         {
             PuzzleInput.text = "Certa resposta!";
             GameEvents.GetSecondItem.Invoke();
+            DialogueManager.instance.TurnDialogueOff();
             DialogueManager.instance.CallDialogue(RightWord);
         }
         else
         {
             PuzzleInput.text = "Resposta errada";
+            DialogueManager.instance.TurnDialogueOff();
             DialogueManager.instance.CallDialogue(WrongWord);
         }
         
