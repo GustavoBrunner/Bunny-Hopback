@@ -4480,22 +4480,6 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: m_Radius
-      value: 1.0091305
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: m_Center.x
-      value: 0.12301445
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: m_Center.y
-      value: -0.09310019
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: m_Center.z
-      value: -0.16408956
-      objectReference: {fileID: 0}
     - target: {fileID: 3887560408639872020, guid: b2650723a3716e84994bdd0907d77b30, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.5
@@ -4507,6 +4491,10 @@ PrefabInstance:
     - target: {fileID: 3887560408639872020, guid: b2650723a3716e84994bdd0907d77b30, type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.84
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519559265029605038, guid: b2650723a3716e84994bdd0907d77b30, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b2650723a3716e84994bdd0907d77b30, type: 3}
