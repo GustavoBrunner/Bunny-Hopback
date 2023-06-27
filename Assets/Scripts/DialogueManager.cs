@@ -51,7 +51,7 @@ public class DialogueManager : MonoBehaviour
             _instance = this;
         }
         name = GameObject.Find("name").GetComponentInChildren<TMP_Text>();
-        text = GameObject.Find("Dialogue").GetComponent<TMP_Text>();
+        text = GameObject.Find("Dialogues").GetComponentInChildren<TMP_Text>();
         tf = GetComponent<RectTransform>();
         _name = " ";
         TextSpeed = 0.05f;
@@ -169,7 +169,7 @@ public class DialogueManager : MonoBehaviour
     private bool CheckBeepMoment(Dialogue[] d)
     {
         bool flag = false;
-        if (d[index].name == "Mamãe")
+        if (d[index].name == "Mamï¿½e")
         {
             flag = true;
         }
