@@ -37,7 +37,7 @@ public class DialogueManager : MonoBehaviour
 
     public bool isCutscene;
 
-    
+    private UnityEngine.UI.Image profile;
 
     void Awake()
     {
@@ -60,6 +60,9 @@ public class DialogueManager : MonoBehaviour
         btn = GameObject.Find("NextBtn").GetComponent<UnityEngine.UI.Button>();
         IsDialogueHappn = false;
         isCutscene = false;
+
+        this.profile = GameObject.Find("profile")
+            .GetComponentInParent<UnityEngine.UI.Image>();
     }
     public void UpdateDialogue(Dialogue[] d)
     {
@@ -77,6 +80,7 @@ public class DialogueManager : MonoBehaviour
         var actualSentence = _d[index];
         nextsentences = _d;
         this.name.text = actualSentence.name;
+        this.profile.sprite = actualSentence.profile;
         foreach (var letter in actualSentence.sentence)
         {
             text.text += letter;

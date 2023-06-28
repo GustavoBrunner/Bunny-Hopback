@@ -554,6 +554,18 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6798347158320718880, guid: 344b8bd104602d74cbfdf0c35b430954, type: 3}
+      propertyPath: NonePhaseDialogues.Array.data[0].profile
+      value: 
+      objectReference: {fileID: 21300000, guid: c49e742b8df8dfe4e9a2e21cf7011ca1, type: 3}
+    - target: {fileID: 6798347158320718880, guid: 344b8bd104602d74cbfdf0c35b430954, type: 3}
+      propertyPath: NonePhaseDialogues.Array.data[1].profile
+      value: 
+      objectReference: {fileID: 21300000, guid: c49e742b8df8dfe4e9a2e21cf7011ca1, type: 3}
+    - target: {fileID: 6798347158320718880, guid: 344b8bd104602d74cbfdf0c35b430954, type: 3}
+      propertyPath: NonePhaseDialogues.Array.data[2].profile
+      value: 
+      objectReference: {fileID: 21300000, guid: c49e742b8df8dfe4e9a2e21cf7011ca1, type: 3}
     - target: {fileID: 6824108315738369894, guid: 344b8bd104602d74cbfdf0c35b430954, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 1

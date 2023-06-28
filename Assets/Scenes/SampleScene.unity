@@ -357,7 +357,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh30442
+  m_Name: pb_Mesh28640
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -515,6 +515,82 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &94191818
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 94191819}
+  - component: {fileID: 94191821}
+  - component: {fileID: 94191820}
+  m_Layer: 4
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &94191819
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 94191818}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1028008210}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 210, y: 210}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &94191820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 94191818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &94191821
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 94191818}
+  m_CullTransparentMesh: 1
 --- !u!850595691 &143187132
 LightingSettings:
   m_ObjectHideFlags: 0
@@ -583,7 +659,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-2946
+  m_Name: pb_Mesh-10226
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1075,7 +1151,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh30050
+  m_Name: pb_Mesh28240
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -3495,7 +3571,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh30288
+  m_Name: pb_Mesh28486
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4321,7 +4397,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh30166
+  m_Name: pb_Mesh28356
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4485,7 +4561,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh29806
+  m_Name: pb_Mesh27996
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4930,7 +5006,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh30414
+  m_Name: pb_Mesh28612
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -5094,7 +5170,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh29692
+  m_Name: pb_Mesh27882
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -5315,7 +5391,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh29918
+  m_Name: pb_Mesh28108
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -6606,7 +6682,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh30346
+  m_Name: pb_Mesh28544
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -7006,13 +7082,17 @@ MonoBehaviour:
   RightWord:
   - name: Menina
     sentence: "Consegui! hihihi meu pai \xE9 t\xE3o bobo..."
+    profile: {fileID: 0}
   - name: Menina
     sentence: Ele sabe que eu amo bolachinha recheada
+    profile: {fileID: 0}
   WrongWord:
   - name: Menina
     sentence: Droga... Palavra errada...
+    profile: {fileID: 0}
   - name: Menina
     sentence: "Ser\xE1 que eu vi em todos os lugares?"
+    profile: {fileID: 0}
   NextBtn: {fileID: 8702071438864171669}
 --- !u!1 &890641909
 GameObject:
@@ -7134,7 +7214,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh30240
+  m_Name: pb_Mesh28430
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -7473,7 +7553,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh30014
+  m_Name: pb_Mesh28204
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -8035,6 +8115,83 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1026861294}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1028008209
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1028008210}
+  - component: {fileID: 1028008212}
+  - component: {fileID: 1028008211}
+  m_Layer: 4
+  m_Name: profile
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1028008210
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1028008209}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 94191819}
+  m_Father: {fileID: 6289215511093361904}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 693, y: -265}
+  m_SizeDelta: {x: 300, y: 303.1}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1028008211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1028008209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1028008212
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1028008209}
+  m_CullTransparentMesh: 1
 --- !u!1 &1035605876
 GameObject:
   m_ObjectHideFlags: 0
@@ -9140,7 +9297,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh29716
+  m_Name: pb_Mesh27906
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -9920,7 +10077,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh29754
+  m_Name: pb_Mesh27944
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -10586,7 +10743,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh29672
+  m_Name: pb_Mesh27862
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -10750,7 +10907,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh30204
+  m_Name: pb_Mesh28394
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -12012,7 +12169,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh29988
+  m_Name: pb_Mesh28178
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -15862,7 +16019,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh29828
+  m_Name: pb_Mesh28018
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -16414,22 +16571,29 @@ MonoBehaviour:
   NonePhaseDialogues:
   - name: asdsad
     sentence: asdsadasdsa
+    profile: {fileID: 0}
   NotCompletedPuzzle:
   - name: Menina
     sentence: Hmmmm... Eu preciso de uma palavra pra abrir a geladeira
+    profile: {fileID: 0}
   - name: Menina
     sentence: Droga, meus pais colocaram esse cadeado porque eu comia todas as bolachinhas
       da casa...
+    profile: {fileID: 0}
   NotCompletedPuzzle2:
   - name: Menina
     sentence: "\xC9 claro, eu preciso da palavra. Onde ela estava mesmo?"
+    profile: {fileID: 0}
   - name: Menina
     sentence: Era por aqui...
+    profile: {fileID: 0}
   NonePhaseDialogue:
   - name: Menina
     sentence: Aff... Meus pais trancaram a geladeira antes de sair
+    profile: {fileID: 0}
   - name: Menina
     sentence: "Mas eu tamb\xE9m n\xE3o preciso de nada que esteja ali ainda... hihi"
+    profile: {fileID: 0}
 --- !u!65 &1628312814
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17032,7 +17196,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh29874
+  m_Name: pb_Mesh28064
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -17543,7 +17707,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh30460
+  m_Name: pb_Mesh28658
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -18579,7 +18743,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh30488
+  m_Name: pb_Mesh28686
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -19111,8 +19275,10 @@ MonoBehaviour:
   ListDialogue:
   - name: Menina
     sentence: "Ops... Meu pai esqueceu a lista... Algu\xE9m vai se dar mal."
+    profile: {fileID: 0}
   - name: Menina
     sentence: Hmmm... Bolachinha... Eu amo bolachinha
+    profile: {fileID: 0}
   PicDialogue: []
   DrawDialogue: []
 --- !u!1 &2106948026
@@ -19616,7 +19782,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: sdsda
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -20487,7 +20653,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -77.29993, y: 25.375134}
+  m_AnchoredPosition: {x: -163, y: 25.375134}
   m_SizeDelta: {x: 153.19995, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1501989063416585748
@@ -23962,7 +24128,7 @@ PrefabInstance:
       objectReference: {fileID: 157828503}
     - target: {fileID: 4822943213404849880, guid: b2406a9ea476af4468a24edbbf971afb, type: 3}
       propertyPath: m_VersionIndex
-      value: 963
+      value: 969
       objectReference: {fileID: 0}
     - target: {fileID: 4822943213404849880, guid: b2406a9ea476af4468a24edbbf971afb, type: 3}
       propertyPath: m_SelectedVertices.Array.size
@@ -25840,10 +26006,11 @@ RectTransform:
   m_GameObject: {fileID: 8845546092981807622}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1502772540}
+  - {fileID: 1028008210}
   m_Father: {fileID: 883644992}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
