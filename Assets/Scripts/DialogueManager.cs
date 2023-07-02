@@ -105,7 +105,8 @@ public class DialogueManager : MonoBehaviour
                 }
                 else if (GameController._instance._phase == GamePhaseChecker.FinalPhase)
                 {
-
+                    Debug.Log("Dialogo terminando");
+                    GameController._instance.EndGame();
                     StartCoroutine(GoToFinal());
                 }
             }
@@ -115,7 +116,8 @@ public class DialogueManager : MonoBehaviour
                 if (beepSignal)
                 {
                     AudioController.instance?.PlayBeep();
-                    AudioController.instance.ChangeMusicPitch(3);
+                    AudioController.instance?.ChangeMusicPitch(3);
+                    Debug.Log("Ligando beep");
                 }
             }
         }
@@ -173,7 +175,7 @@ public class DialogueManager : MonoBehaviour
     private bool CheckBeepMoment(Dialogue[] d)
     {
         bool flag = false;
-        if (d[index].name == "Mam�e")
+        if (d[index].name == "Mamãe")
         {
             flag = true;
         }
@@ -187,6 +189,7 @@ public class DialogueManager : MonoBehaviour
     private IEnumerator GoToFinal()
     {
         yield return new WaitForSeconds(4f);
-        AudioController.instance.PlayBeep();
+        
+        
     }
 }

@@ -102,35 +102,45 @@ MonoBehaviour:
   NonePhaseDialogues:
   - name: Menina
     sentence: Ah o brinquedinho do Bunny.
+    profile: {fileID: 0}
   - name: Menina
     sentence: "Esse \xE9 o preferido dele!"
+    profile: {fileID: 0}
   - name: Menina
     sentence: "Mas eu n\xE3o preciso dele agora."
+    profile: {fileID: 0}
   NonePhaseDialogue: []
   FirstPhaseDialogue:
   - name: Menina
     sentence: Achei! Sabia que tinha deixado por aqui.
+    profile: {fileID: 0}
   - name: Menina
     sentence: Agora posso voltar pra brincar com o Bunny.
+    profile: {fileID: 0}
   - name: Menina
     sentence: "Ele deve estar ansioso j\xE1. hehe "
+    profile: {fileID: 0}
   SecondPhaseDialogue:
-  - name: 
-    sentence: 
   - name: Menina
     sentence: Algo me diz que o Bunny quer brincar.
+    profile: {fileID: 0}
   - name: Menina
     sentence: "Ent\xE3o j\xE1 vou levar esse brinquedinho... hehe"
+    profile: {fileID: 0}
   - name: Menina
     sentence: "Que estranho, sensa\xE7\xE3o de que isso j\xE1 aconteceu... Acho que
       estou doida."
+    profile: {fileID: 0}
   ThirdPhaseDialogue:
   - name: Menina
     sentence: "Que estranho, eu tenho certeza que j\xE1 passei por isso antes... "
+    profile: {fileID: 0}
   - name: Menina
     sentence: "Que dor de cabe\xE7a... N\xE3o estou bem..."
+    profile: {fileID: 0}
   - name: Menina
     sentence: "Por que isso est\xE1 acontecendo comigo?"
+    profile: {fileID: 0}
   _phase: 
 --- !u!65 &3749073199596318304
 BoxCollider:

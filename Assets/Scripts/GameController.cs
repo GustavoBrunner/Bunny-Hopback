@@ -118,8 +118,8 @@ public class GameController : MonoBehaviour
     }
     public void Start()
     {
-        phase = GamePhase.StartThirdPuzzle;
-        Loop = GameLoop.Second;
+        phase = GamePhase.Start;
+        Loop = GameLoop.None;
         GameEvents.onUpdatePhase.Invoke(Loop, phase);
         DialogueToTrigger = 1;
     }
