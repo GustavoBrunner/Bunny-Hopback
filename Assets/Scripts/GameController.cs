@@ -80,6 +80,11 @@ public class GameController : MonoBehaviour
     
     [SerializeField]
     private Dialogue[] CombinationError;
+    
+    [SerializeField]
+    private Dialogue[] Combination;
+
+
 
     private void Awake()
     {
@@ -106,9 +111,9 @@ public class GameController : MonoBehaviour
 
         //mainCam = GameObject.FindGameObjectWithTag("MainCamera");
         RightCombination[0] = 1;
-        RightCombination[1] = 4;
-        RightCombination[2] = 1;
-        RightCombination[3] = 0;
+        RightCombination[1] = 9;
+        RightCombination[2] = 9;
+        RightCombination[3] = 8;
         Debug.Log($"A combinação correta é: {RightCombination[0]}, {RightCombination[1]}, {RightCombination[2]}, {RightCombination[3]} ");
     }
     public void Start()
@@ -144,6 +149,7 @@ public class GameController : MonoBehaviour
         else
         {
             Debug.Log("Combina��o errada, tente novamente");
+            DialogueManager.instance.TurnDialogueOff();
             DialogueManager.instance.CallDialogue(CombinationError);
         }
     }
@@ -250,17 +256,17 @@ public class GameController : MonoBehaviour
         }
     }
 
-    public void QuestTurnOnCam()
+    public void QuestTurnOnCam(int i)
     {
-        StartCoroutine(QuestCamAction());
+        StartCoroutine(QuestCamAction(i));
     }
 
-    private IEnumerator QuestCamAction()
+    private IEnumerator QuestCamAction(int i)
     {
         DialogueManager.instance.isCutscene = true;
         camAnimator.SetTrigger("QuestTurnOffCam");
         yield return new WaitForSeconds(7f);
-        GameEvents.TransitionDialogue.Invoke();
+        GameEvents.TransitionDialogue.Invoke(i);
         camAnimator.SetTrigger("QuestTurnOnCam");
         DialogueManager.instance.isCutscene = false;
         StopAllCoroutines();

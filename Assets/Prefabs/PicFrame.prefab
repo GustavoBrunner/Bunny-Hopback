@@ -338,15 +338,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ListDialogue: []
   PicDialogue:
-  - name: Menina
-    sentence: Ai ai... O casamento dos meus papais, dia 14/10
-  - name: Menina
+  - name: Madelyne
+    sentence: Ai ai... O casamento dos meus papais, foi em 1998...
+    profile: {fileID: 21300000, guid: 2060541ec40b20b438f7cbf7fe0ea3d5, type: 3}
+  - name: Madelyne
     sentence: "Minha m\xE3e sempre se emociona quando me conta sobre esse dia"
-  - name: Menina
+    profile: {fileID: 21300000, guid: 2060541ec40b20b438f7cbf7fe0ea3d5, type: 3}
+  - name: Madelyne
     sentence: "Foi um dia t\xE3o especial pra eles... Eles ainda comemoram como se
       tivesse acontecido ontem..."
-  - name: Menina
+    profile: {fileID: 21300000, guid: 2060541ec40b20b438f7cbf7fe0ea3d5, type: 3}
+  - name: Madelyne
     sentence: "Apesar de hoje eles j\xE1 n\xE3o parecerem ser t\xE3o felizes mais."
+    profile: {fileID: 21300000, guid: 2060541ec40b20b438f7cbf7fe0ea3d5, type: 3}
   DrawDialogue: []
 --- !u!33 &4822943213404849885
 MeshFilter:

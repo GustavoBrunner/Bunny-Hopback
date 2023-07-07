@@ -17,6 +17,7 @@ public class CluePuzzle : UnityEvent { }
 public class CutsceneDialogue : UnityEvent<int> { }
 public class CamPosUpdate : UnityEvent<int> { }
 
+public class TransitionDialogue : UnityEvent<int> { }
 
 public class StartWalk : UnityEvent { }
 public class GameEvents 
@@ -48,11 +49,12 @@ public class GameEvents
     public static UnityEvent GetSecondItem = new UnityEvent();
     public static UnityEvent GetFlashLight = new UnityEvent();
 
-    public static UnityEvent TransitionDialogue = new UnityEvent();
+    public static TransitionDialogue TransitionDialogue = new TransitionDialogue();
 
     public static UnityEvent onDiaryInteracted = new UnityEvent();
 
     public static UnityEvent onEndDiaryInteraction = new UnityEvent();
 
     public static StartWalk onStartWalkSound = new StartWalk();
+    public static UnityEvent EnableThirdItem = new UnityEvent();
 }

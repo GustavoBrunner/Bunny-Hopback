@@ -90,6 +90,7 @@ public class UiController : MonoBehaviour
         GameEvents.onCloseTerminal.AddListener(CloseTerminal);
         initialText = tipsText.text;
         GameEvents.onRestartDayEvent.AddListener(RestartTips);
+        
     }
 
     
@@ -114,11 +115,13 @@ public class UiController : MonoBehaviour
         {
             PuzzleInput.text = "Certa resposta!";
             GameEvents.GetSecondItem.Invoke();
+            DialogueManager.instance.TurnDialogueOff();
             DialogueManager.instance.CallDialogue(RightWord);
         }
         else
         {
             PuzzleInput.text = "Resposta errada";
+            DialogueManager.instance.TurnDialogueOff();
             DialogueManager.instance.CallDialogue(WrongWord);
         }
         

@@ -19,6 +19,9 @@ public class FreezerScript : ObjectsScript , IInteractable
     [SerializeField]
     private Dialogue[] NotCompletedPuzzle2;
 
+    [SerializeField]
+    private Dialogue[] NonePhaseDialogue;
+
     protected override void Awake()
     {
         base.Awake();
@@ -52,7 +55,7 @@ public class FreezerScript : ObjectsScript , IInteractable
 
             default:
 
-                //DialogueManager.instance.CallDialogue(this.NonePhaseDialogue);
+                DialogueManager.instance.CallDialogue(this.NonePhaseDialogue);
                 break;
 
         }

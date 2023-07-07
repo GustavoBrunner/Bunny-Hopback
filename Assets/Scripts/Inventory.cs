@@ -29,18 +29,15 @@ public class Inventory : UiController
         {
             case "FirstPuzzle":
                 img.sprite = puzzleSprites[0];
-                img.color = Color.red;
                 img.enabled = true;
                 Debug.Log("Trocando sprite");
                 break;
             case "SecondPuzzle":
                 img.sprite = puzzleSprites[1];
-                img.color = Color.blue;
                 img.enabled = true;
                 break;
             case "ThirdPuzzle":
                 img.sprite = puzzleSprites[2];
-                img.color = Color.cyan;
                 img.enabled = true;
                 break;
             default:

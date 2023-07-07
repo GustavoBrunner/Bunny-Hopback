@@ -339,18 +339,23 @@ MonoBehaviour:
   ListDialogue: []
   PicDialogue: []
   DrawDialogue:
-  - name: Menina
+  - name: Madelyne
     sentence: "hi hi hi hi meu primeiro desenho da nossa fam\xEDlia"
-  - name: Menina
+    profile: {fileID: 21300000, guid: 2060541ec40b20b438f7cbf7fe0ea3d5, type: 3}
+  - name: Madelyne
     sentence: "O Bunny nem tava na fam\xEDlia ainda"
-  - name: Menina
+    profile: {fileID: 21300000, guid: 2060541ec40b20b438f7cbf7fe0ea3d5, type: 3}
+  - name: Madelyne
     sentence: "\xC0s vezes eu sinto que ele olha com um pouco de raiva pra esse desenho"
-  - name: Menina
+    profile: {fileID: 21300000, guid: 2060541ec40b20b438f7cbf7fe0ea3d5, type: 3}
+  - name: Madelyne
     sentence: "Mas... Ele \xE9 um coelho... Claro que \xE9 s\xF3 coisa da minha cabe\xE7a
       hehehe "
-  - name: Menina
+    profile: {fileID: 21300000, guid: 2060541ec40b20b438f7cbf7fe0ea3d5, type: 3}
+  - name: Madelyne
     sentence: "Eu sou t\xE3o boba. Eu sinto que j\xE1 faz tanto tempo que fiz esse
       desenho, mas eu fiz ele h\xE1 uns meses s\xF3... "
+    profile: {fileID: 21300000, guid: 2060541ec40b20b438f7cbf7fe0ea3d5, type: 3}
 --- !u!33 &175344125438637462
 MeshFilter:
   m_ObjectHideFlags: 0

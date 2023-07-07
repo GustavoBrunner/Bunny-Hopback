@@ -24,7 +24,8 @@ public class SecondPuzzleItem : ObjectsScript, IInteractable
         base.Awake();
         //GameController.OnRightWord += TurnInteractionOn;
         
-        cllidr.enabled = false;
+        //cllidr.enabled = false;
+        
     }
     protected override void Start()
     {
@@ -73,6 +74,7 @@ public class SecondPuzzleItem : ObjectsScript, IInteractable
     {
         GameEvents.onItemPicked.Invoke(this.gameObject);
         PlayerScript.instance.SecondPuzzleItemPicked = true;
+        Debug.Log("Pegando segundo item");
         Debug.Log(PlayerScript.instance.SecondPuzzleItemPicked);
         if (this.Loop == GameLoop.First)
         {
@@ -90,5 +92,9 @@ public class SecondPuzzleItem : ObjectsScript, IInteractable
     public void HideItemInteraction()
     {
         UiController._instance.HideInteractionFeedback();
+    }
+    private void OnDisable()
+    {
+        Debug.Break();
     }
 }

@@ -301,124 +301,210 @@ MonoBehaviour:
   FirstPhaseDialogues:
   - name: Menina
     sentence: Voltei, Bunny! Vamos brincar!
-  - name: Menina
-    sentence: "Vai Bunny, corre atr\xE1s do brinquedo!"
-  - name: Menina
-    sentence: "N\xE3o! N\xE3o me morte, seu malvado!"
-  - name: Menina
-    sentence: "Ai ai... To cansada j\xE1..."
-  - name: "Mam\xE3e"
-    sentence: "Filha? Vem c\xE1! N\xF3s vamos almo\xE7ar na vov\xF3 hoje!"
-  - name: Menina
-    sentence: Ebaaaaaa! To indo!
-  - name: Menina
-    sentence: "Hmm? Que sensa\xE7\xE3o est..."
+    profile: {fileID: 21300000, guid: 2060541ec40b20b438f7cbf7fe0ea3d5, type: 3}
   CutsceneDialogues1:
-  - name: Menina
+  - name: Madelyne
     sentence: Voltei, Bunny! Vamos brincar!
-  - name: Menina
+    profile: {fileID: 21300000, guid: 2060541ec40b20b438f7cbf7fe0ea3d5, type: 3}
+  - name: Madelyne
     sentence: "Vai Bunny, corre atr\xE1s do brinquedo!"
-  - name: Menina
+    profile: {fileID: 21300000, guid: 2060541ec40b20b438f7cbf7fe0ea3d5, type: 3}
+  - name: Madelyne
     sentence: "N\xE3o! N\xE3o me morde, seu malvado!"
-  - name: Menina
+    profile: {fileID: 21300000, guid: 2060541ec40b20b438f7cbf7fe0ea3d5, type: 3}
+  - name: Madelyne
     sentence: "Ai ai... To cansada j\xE1..."
+    profile: {fileID: 21300000, guid: 2060541ec40b20b438f7cbf7fe0ea3d5, type: 3}
   - name: "Mam\xE3e"
     sentence: "Filha? Vem c\xE1! N\xF3s vamos almo\xE7ar na vov\xF3 hoje!"
-  - name: "Mam\xE3e"
+    profile: {fileID: 21300000, guid: 28a9fce54dabbe3498fe7a17aa8fc269, type: 3}
+  - name: Madelyne
     sentence: Ebaaaaaa! To indo!
-  - name: "Mam\xE3e"
+    profile: {fileID: 21300000, guid: 2060541ec40b20b438f7cbf7fe0ea3d5, type: 3}
+  - name: Madelyne
     sentence: "Hmm? Que sensa\xE7\xE3o estr..."
+    profile: {fileID: 21300000, guid: 2060541ec40b20b438f7cbf7fe0ea3d5, type: 3}
   CutsceneDialogues2:
-  - name: Menina
+  - name: Madelyne
     sentence: Nossa Bunny, tu ficou com fome mesmo, hein?
-  - name: Menina
+    profile: {fileID: 21300000, guid: 2060541ec40b20b438f7cbf7fe0ea3d5, type: 3}
+  - name: Madelyne
     sentence: "Cuidado, tu vai derramar toda a ra\xE7\xE3o!"
-  - name: Menina
+    profile: {fileID: 21300000, guid: 2060541ec40b20b438f7cbf7fe0ea3d5, type: 3}
+  - name: Madelyne
     sentence: "Olha a sujeira que tu t\xE1 fazendo. Bunny Feio!"
+    profile: {fileID: 21300000, guid: 2060541ec40b20b438f7cbf7fe0ea3d5, type: 3}
   - name: Papai
     sentence: "Filha? Onde tu t\xE1?"
-  - name: Menina
+    profile: {fileID: 21300000, guid: 5bd824c63012f3e4a813802993b06dbc, type: 3}
+  - name: Madelyne
     sentence: To aqui com o Bunny, papai!
+    profile: {fileID: 21300000, guid: 2060541ec40b20b438f7cbf7fe0ea3d5, type: 3}
   - name: Papai
     sentence: "Ent\xE3o venha! N\xF3s vamos jantar fora!"
-  - name: Menina
+    profile: {fileID: 21300000, guid: 5bd824c63012f3e4a813802993b06dbc, type: 3}
+  - name: Madelyne
     sentence: EBAAAA! To indo!
-  - name: Menina
+    profile: {fileID: 21300000, guid: 2060541ec40b20b438f7cbf7fe0ea3d5, type: 3}
+  - name: Madelyne
     sentence: "Hmm?? Essa sensa\xE7...?"
+    profile: {fileID: 21300000, guid: 2060541ec40b20b438f7cbf7fe0ea3d5, type: 3}
   CutsceneDialogues3:
-  - name: Menina
+  - name: Madelyne
     sentence: "Bunny! Me diz que isso aqui \xE9 mentira!"
-  - name: Menina
+    profile: {fileID: 21300000, guid: 2060541ec40b20b438f7cbf7fe0ea3d5, type: 3}
+  - name: Madelyne
     sentence: "Me diz que a criatura dessa reportagem n\xE3o \xE9 voc\xEA!"
-  - name: Menina
+    profile: {fileID: 21300000, guid: 2060541ec40b20b438f7cbf7fe0ea3d5, type: 3}
+  - name: Madelyne
     sentence: "Me diz que todas aquelas sensa\xE7\xF5es que eu senti n\xE3o s\xE3o
       o que eu to pensando que s\xE3o..."
-  - name: ????
+    profile: {fileID: 21300000, guid: 2060541ec40b20b438f7cbf7fe0ea3d5, type: 3}
+  - name: Bunny?
     sentence: "Sim... \xC9 verdade... Ent\xE3o voc\xEA descobriu... Eu sinto muito..."
-  - name: Menina
+    profile: {fileID: 21300000, guid: 9bc90a5674324c9488233259d54a6c4e, type: 3}
+  - name: Madelyne
     sentence: "Por que, Bunny? Eu confiei em voc\xEA..."
+    profile: {fileID: 21300000, guid: 2060541ec40b20b438f7cbf7fe0ea3d5, type: 3}
   - name: Bunny
     sentence: "Porque eu amo brincar contigo! Me desculpa, eu s\xF3 queria ficar
       brincando sempre... Pra sempre..."
-  - name: Menina
+    profile: {fileID: 21300000, guid: 9bc90a5674324c9488233259d54a6c4e, type: 3}
+  - name: Madelyne
     sentence: "Eu tamb\xE9m amo brincar contigo, Bunny! Mas o que voc\xEA fez com
       aquelas crian\xE7as e comigo \xE9 errado!"
-  - name: Menina
+    profile: {fileID: 21300000, guid: 2060541ec40b20b438f7cbf7fe0ea3d5, type: 3}
+  - name: Madelyne
     sentence: "Eu tenho outras coisas pra fazer... Eu quero meus pais tamb\xE9m...
       H\xE1 quanto tempo eu... to nessa situa\xE7\xE3o?"
+    profile: {fileID: 21300000, guid: 2060541ec40b20b438f7cbf7fe0ea3d5, type: 3}
   - name: Bunny
     sentence: "Eu n\xE3o lembro... Uns 2 anos. "
-  - name: Menina
+    profile: {fileID: 21300000, guid: 9bc90a5674324c9488233259d54a6c4e, type: 3}
+  - name: Madelyne
     sentence: O QUE? DOIS ANOS?
-  - name: Menina
+    profile: {fileID: 21300000, guid: 2060541ec40b20b438f7cbf7fe0ea3d5, type: 3}
+  - name: Madelyne
     sentence: 'BUNNY! ACABE COM ISSO LOGO! '
+    profile: {fileID: 21300000, guid: 2060541ec40b20b438f7cbf7fe0ea3d5, type: 3}
   - name: Bunny
     sentence: "Eu n\xE3o posso... Voc\xEA vai me abandonar"
-  - name: Menina
+    profile: {fileID: 21300000, guid: 9bc90a5674324c9488233259d54a6c4e, type: 3}
+  - name: Madelyne
     sentence: "Bunny, n\xE3o! Eu n\xE3o vou te abandonar, voc\xEA \xE9 meu melhor
       amigo!"
+    profile: {fileID: 21300000, guid: 2060541ec40b20b438f7cbf7fe0ea3d5, type: 3}
   - name: Bunny
     sentence: Jura?
-  - name: Menina
+    profile: {fileID: 21300000, guid: 9bc90a5674324c9488233259d54a6c4e, type: 3}
+  - name: Madelyne
     sentence: Eu juro, de mindinho!
+    profile: {fileID: 21300000, guid: 2060541ec40b20b438f7cbf7fe0ea3d5, type: 3}
   - name: Bunny
     sentence: Eu sinto muito
+    profile: {fileID: 21300000, guid: 9bc90a5674324c9488233259d54a6c4e, type: 3}
   - name: "Mam\xE3e"
     sentence: Hm?
+    profile: {fileID: 21300000, guid: 28a9fce54dabbe3498fe7a17aa8fc269, type: 3}
   - name: "Mam\xE3e"
     sentence: "FILHA? TU ACORDOU? VOC\xCA VOLTOU PRA MIM, MINHA PRINCESA"
-  - name: Menina
+    profile: {fileID: 21300000, guid: 28a9fce54dabbe3498fe7a17aa8fc269, type: 3}
+  - name: Madelyne
     sentence: "Ma... ma... mam\xE3e?"
+    profile: {fileID: 21300000, guid: 2060541ec40b20b438f7cbf7fe0ea3d5, type: 3}
   SecondPhaseDialogues:
   - name: Menina
     sentence: "Texto aleat\xF3rio"
+    profile: {fileID: 0}
   - name: Menina
     sentence: "Texto aleat\xF3rio"
+    profile: {fileID: 0}
   ThirdPhaseDialogues:
   - name: Menina
     sentence: "Texto aleat\xF3rio"
+    profile: {fileID: 0}
   - name: Menina
     sentence: "Texto aleat\xF3rio"
+    profile: {fileID: 0}
   LastPhaseDialogues:
   - name: Menina
     sentence: "Texto aleat\xF3rio"
+    profile: {fileID: 0}
   - name: Menina
     sentence: "Texto aleat\xF3rio"
+    profile: {fileID: 0}
   AtticTriggerDialogues:
-  - name: Menina
+  - name: Madelyne
     sentence: "N\xE3o devo ir no s\xF3t\xE3o, \xE9 muito escuro, eu tenho medo."
-  - name: Menina
+    profile: {fileID: 21300000, guid: 2060541ec40b20b438f7cbf7fe0ea3d5, type: 3}
+  - name: Madelyne
     sentence: "Minha m\xE3e disse que o bicho-pap\xE3o vive l\xE1..."
+    profile: {fileID: 21300000, guid: 2060541ec40b20b438f7cbf7fe0ea3d5, type: 3}
   ARightCombination:
-  - name: Menina
+  - name: Madelyne
     sentence: "\xC9 ISSO! EU CONSEGUI!"
-  - name: Menina
+    profile: {fileID: 21300000, guid: 2060541ec40b20b438f7cbf7fe0ea3d5, type: 3}
+  - name: Madelyne
     sentence: A princesa mais inteligente de todo o reino!
+    profile: {fileID: 21300000, guid: 2060541ec40b20b438f7cbf7fe0ea3d5, type: 3}
   CombinationError:
-  - name: Menina
+  - name: Madelyne
     sentence: "Droga! Errei os n\xFAmeros..."
+    profile: {fileID: 21300000, guid: 2060541ec40b20b438f7cbf7fe0ea3d5, type: 3}
   - name: Menina
     sentence: "Pense, voc\xEA \xE9 esperta!"
+    profile: {fileID: 0}
+  DialoguePlaceHolder: []
+  TransitionDialogue1:
+  - name: Madelyne
+    sentence: Voltei, Bunny! Vamos brincar!
+    profile: {fileID: 21300000, guid: 2060541ec40b20b438f7cbf7fe0ea3d5, type: 3}
+  - name: Madelyne
+    sentence: "Vai Bunny, corre atr\xE1s do brinquedo!"
+    profile: {fileID: 21300000, guid: 2060541ec40b20b438f7cbf7fe0ea3d5, type: 3}
+  - name: Madelyne
+    sentence: "N\xE3o! N\xE3o me morde, seu malvado!"
+    profile: {fileID: 21300000, guid: 2060541ec40b20b438f7cbf7fe0ea3d5, type: 3}
+  - name: Madelyne
+    sentence: "Ai ai... To cansada j\xE1..."
+    profile: {fileID: 21300000, guid: 2060541ec40b20b438f7cbf7fe0ea3d5, type: 3}
+  - name: Madelyne
+    sentence: "Que sensa\xE7\xE3o estranha... Acho que \xE9 s\xF3 o cansa\xE7o..."
+    profile: {fileID: 21300000, guid: 2060541ec40b20b438f7cbf7fe0ea3d5, type: 3}
+  - name: Madelyne
+    sentence: Hmmmm... To com fome, o que acha de a gente comer algo, Bunny?
+    profile: {fileID: 21300000, guid: 2060541ec40b20b438f7cbf7fe0ea3d5, type: 3}
+  - name: Madelyne
+    sentence: "Hihihi... t\xE1 com fome, n\xE9? Vou l\xE1 pegar sua ra\xE7\xE3o,
+      espertinho."
+    profile: {fileID: 21300000, guid: 2060541ec40b20b438f7cbf7fe0ea3d5, type: 3}
+  TransitionDialogue2:
+  - name: Madelyne
+    sentence: Nossa Bunny, tu ficou com fome mesmo, hein?
+    profile: {fileID: 21300000, guid: 2060541ec40b20b438f7cbf7fe0ea3d5, type: 3}
+  - name: Madelyne
+    sentence: "Cuidado, tu vai derramar toda a ra\xE7\xE3o!"
+    profile: {fileID: 21300000, guid: 2060541ec40b20b438f7cbf7fe0ea3d5, type: 3}
+  - name: Menina
+    sentence: "Cuidado, tu vai derramar toda a ra\xE7\xE3o!"
+    profile: {fileID: 21300000, guid: 2060541ec40b20b438f7cbf7fe0ea3d5, type: 3}
+  - name: Madelyne
+    sentence: "Olha a sujeira que tu t\xE1 fazendo. Bunny Feio!"
+    profile: {fileID: 21300000, guid: 2060541ec40b20b438f7cbf7fe0ea3d5, type: 3}
+  - name: Madelyne
+    sentence: 'Aff, agora eu vou ter que limpar tud... '
+    profile: {fileID: 21300000, guid: 2060541ec40b20b438f7cbf7fe0ea3d5, type: 3}
+  - name: Madelyne
+    sentence: "Nossa, que sensa\xE7\xE3o estranha... O que ser\xE1 que t\xE1 acontecendo
+      comigo?"
+    profile: {fileID: 21300000, guid: 2060541ec40b20b438f7cbf7fe0ea3d5, type: 3}
+  - name: Madelyne
+    sentence: "Mas agora eu vou precisar limpar tudo, Bunny! E tu t\xE1 fedendo,
+      tamb\xE9m!"
+    profile: {fileID: 21300000, guid: 2060541ec40b20b438f7cbf7fe0ea3d5, type: 3}
+  - name: Madelyne
+    sentence: "Como castigo vou te dar banho, tamb\xE9m hihihi"
+    profile: {fileID: 21300000, guid: 2060541ec40b20b438f7cbf7fe0ea3d5, type: 3}
   PlayerInteracting: 0
 --- !u!136 &4853443133719405707
 CapsuleCollider:

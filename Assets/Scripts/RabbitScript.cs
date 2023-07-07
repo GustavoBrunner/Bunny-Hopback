@@ -88,7 +88,7 @@ public class RabbitScript : MonoBehaviour, IInteractable
                     GameEvents.onInventoryClear.Invoke();
                     //GameController._instance.EndQuestFade();
 
-                    GameController._instance.QuestTurnOnCam();
+                    GameController._instance.QuestTurnOnCam(0);
                     GameController._instance.UpdateGamePhase(GameLoop.First, GamePhase.StartSecondPuzzle);
                     UiController._instance.UpdateTips("\n? Converse com Bunny");
                     break;
@@ -136,7 +136,7 @@ public class RabbitScript : MonoBehaviour, IInteractable
                 case "FirstQuestEndLoop2Phase": 
                     GameController._instance.UpdateGamePhase(GameLoop.Second, GamePhase.StartSecondPuzzle);
                     GameEvents.onInventoryClear.Invoke();
-                    GameController._instance.QuestTurnOnCam();
+                    GameController._instance.QuestTurnOnCam(0);
                     UiController._instance.UpdateTips("\n? !@$%#@$@%@# Bunny @$%@#¨#$$%@ geladeira");
                     break;
 
@@ -147,7 +147,7 @@ public class RabbitScript : MonoBehaviour, IInteractable
                 case "SecondQuestEndPhaseLoop2": //Libera o armário para ser interagido
                     if (PlayerScript.instance.SecondPuzzleItemPicked)
                     {
-                        GameController._instance.QuestTurnOnCam();
+                        GameController._instance.QuestTurnOnCam(1);
                         GameEvents.onInventoryClear.Invoke();
                         
                         GameController._instance.UpdateGamePhase(GameLoop.Second, GamePhase.StartThirdPuzzle);

@@ -66,6 +66,14 @@ public class PlayerScript : MonoBehaviour
     private Dialogue[] CombinationError;
     [SerializeField]
     private Dialogue[] DialoguePlaceHolder;
+    
+    [SerializeField]
+    private Dialogue[] TransitionDialogue1;
+    
+    [SerializeField]
+    private Dialogue[] TransitionDialogue2;
+
+
 
     private Vector3 initialPosition;
 
@@ -158,20 +166,23 @@ public class PlayerScript : MonoBehaviour
         Move("", ActualRoom);
         _playerInTrigger = playerInTrigger;
 
-        
 
+        Debug.Log($"Player tem lanterna? {hasFlashLight}");
 
         if (UnityEngine.Input.GetKeyDown(KeyCode.F))
         {
-            if(!isFlashLightOn)
+            if (hasFlashLight)
             {
-                TurnFlashLightOn();
-                isFlashLightOn = true;
-            }
-            else
-            {
-                TurnFlashLightOff();
-                isFlashLightOn= false;
+                if(!isFlashLightOn)
+                {
+                    TurnFlashLightOn();
+                    isFlashLightOn = true;
+                }
+                else
+                {
+                    TurnFlashLightOff();
+                    isFlashLightOn= false;
+                }
             }
         }
 
@@ -232,23 +243,38 @@ public class PlayerScript : MonoBehaviour
         {
             playerMoving = true;
             AudioController.instance.PlayStep();
+            if(isFlashLightOn)
+            {
+                flashLight.gameObject.SetActive(true);
+            }
+
         }
         else
         {
             playerMoving = false;
             AudioController.instance.StopStep();
+            if (isFlashLightOn)
+            {
+                flashLight.gameObject.SetActive(false);
+            }
         }
     }
     private void SetAnimation()
     {
         if(playerMoving)
-        { 
-            animator.SetTrigger("walking");
+        {
+            if (!hasFlashLight)
+                animator.SetBool("Walking", true);
+            else
+                animator.SetBool("WalkingFlash",true);
             
         }
         else
         {
-            animator.SetTrigger("idle");
+            if (!hasFlashLight)
+                animator.SetBool("Walking", false);
+            else
+                animator.SetBool("WalkingFlash", false);
         }
     }
     private void OnTriggerEnter(Collider other)
@@ -277,7 +303,8 @@ public class PlayerScript : MonoBehaviour
         {
             if (UnityEngine.Input.GetKeyDown(KeyCode.E))
             {
-                interactable.Interact();
+                interactable?.Interact();
+                Debug.Log(interactable);
             }
         }
         
@@ -302,6 +329,7 @@ public class PlayerScript : MonoBehaviour
         if (hasFlashLight)
         {
             flashLight.SetActive(true);
+            isFlashLightOn = true;
         }
         
     }
@@ -310,6 +338,7 @@ public class PlayerScript : MonoBehaviour
         if (hasFlashLight)
         {
             flashLight.SetActive(false);
+            isFlashLightOn = false;
         }
     }
     private void GetFlashLight()
@@ -341,6 +370,8 @@ public class PlayerScript : MonoBehaviour
     {
         transform.position = initialPosition;
         ActualRoom = "CameraContainerBedroom";
+        interactable = null;
+        Debug.Log(interactable);
     }
 
     public void CutsceneDialogue(int d)
@@ -364,9 +395,20 @@ public class PlayerScript : MonoBehaviour
         }
     }
 
-    public void TransitionDialogues()
+    public void TransitionDialogues(int l)
     {
-        DialogueManager.instance.CallDialogue(this.DialoguePlaceHolder);
+        switch(l)
+        {
+            case 0:
+                DialogueManager.instance.CallDialogue(this.TransitionDialogue1);
+                break;
+            case 1:
+                DialogueManager.instance.CallDialogue(this.TransitionDialogue2);
+                break;
+            default:
+                Debug.Break();
+                break;
+        }
     }
     public void AtticDialogueTrigger()
     {
@@ -413,7 +455,9 @@ public class PlayerScript : MonoBehaviour
 
     public void Combination()
     {
+        DialogueManager.instance.TurnDialogueOff();
         DialogueManager.instance.CallDialogue(this.ARightCombination);
+        
     }
     public void ChangeMoviment(bool m)
     {

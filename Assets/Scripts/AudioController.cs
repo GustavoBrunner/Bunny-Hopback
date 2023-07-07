@@ -34,7 +34,7 @@ public class AudioController : MonoBehaviour
             DestroyImmediate(this);
         }
 
-        stepSource.clip = Resources.Load<AudioClip>("Sounds/foot-steps");
+        stepSource.clip = Resources.Load<AudioClip>("Sounds/Footsteps1");
         
         stepSource.playOnAwake = true;
         musicSource.clip = Resources.Load<AudioClip>("Music/feeling-happy");

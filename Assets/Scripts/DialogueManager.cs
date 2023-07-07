@@ -37,7 +37,7 @@ public class DialogueManager : MonoBehaviour
 
     public bool isCutscene;
 
-    
+    private UnityEngine.UI.Image profile;
 
     void Awake()
     {
@@ -51,15 +51,18 @@ public class DialogueManager : MonoBehaviour
             _instance = this;
         }
         name = GameObject.Find("name").GetComponentInChildren<TMP_Text>();
-        text = GameObject.Find("Dialogue").GetComponent<TMP_Text>();
+        text = GameObject.Find("Dialogues").GetComponentInChildren<TMP_Text>();
         tf = GetComponent<RectTransform>();
         _name = " ";
-        TextSpeed = 0.05f;
+        TextSpeed = 0.03f;
         TurnDialogueOff();
         index = 0;
         btn = GameObject.Find("NextBtn").GetComponent<UnityEngine.UI.Button>();
         IsDialogueHappn = false;
         isCutscene = false;
+
+        this.profile = GameObject.Find("profile")
+            .GetComponentInParent<UnityEngine.UI.Image>();
     }
     public void UpdateDialogue(Dialogue[] d)
     {
@@ -77,6 +80,7 @@ public class DialogueManager : MonoBehaviour
         var actualSentence = _d[index];
         nextsentences = _d;
         this.name.text = actualSentence.name;
+        this.profile.sprite = actualSentence.profile;
         foreach (var letter in actualSentence.sentence)
         {
             text.text += letter;
@@ -101,7 +105,8 @@ public class DialogueManager : MonoBehaviour
                 }
                 else if (GameController._instance._phase == GamePhaseChecker.FinalPhase)
                 {
-
+                    Debug.Log("Dialogo terminando");
+                    GameController._instance.EndGame();
                     StartCoroutine(GoToFinal());
                 }
             }
@@ -111,7 +116,8 @@ public class DialogueManager : MonoBehaviour
                 if (beepSignal)
                 {
                     AudioController.instance?.PlayBeep();
-                    AudioController.instance.ChangeMusicPitch(3);
+                    AudioController.instance?.ChangeMusicPitch(3);
+                    Debug.Log("Ligando beep");
                 }
             }
         }
@@ -169,7 +175,7 @@ public class DialogueManager : MonoBehaviour
     private bool CheckBeepMoment(Dialogue[] d)
     {
         bool flag = false;
-        if (d[index].name == "Mam„e")
+        if (d[index].name == "Mam√£e")
         {
             flag = true;
         }
@@ -183,6 +189,7 @@ public class DialogueManager : MonoBehaviour
     private IEnumerator GoToFinal()
     {
         yield return new WaitForSeconds(4f);
-        AudioController.instance.PlayBeep();
+        
+        
     }
 }

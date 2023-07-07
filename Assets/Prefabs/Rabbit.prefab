@@ -50,26 +50,35 @@ MonoBehaviour:
   LastPhaseDialogues:
   - name: 
     sentence: 
+    profile: {fileID: 0}
   - name: 
     sentence: 
+    profile: {fileID: 0}
   ThirdPhaseDialogues:
-  - name: sadsd
-    sentence: fsadasdasdsd
-  - name: asdasdas
-    sentence: adasdasdasdasd
+  - name: Madelyne
+    sentence: "Calma, Bunny! J\xE1 vou l\xE1 pegar sua ra\xE7\xE3o!"
+    profile: {fileID: 0}
+  - name: Madelyne
+    sentence: "Voc\xEA \xE9 muito ansioso..."
+    profile: {fileID: 0}
   SecondPhaseDialogues:
   - name: sdasd
     sentence: adasdasdsadad
+    profile: {fileID: 0}
   ForthPhaseDialogues:
   - name: asdasdasd
     sentence: asdasdasdasdsada
+    profile: {fileID: 0}
   NonePhaseDialogues:
-  - name: Menina
+  - name: Madelyne
     sentence: 'Bom dia, Bunny! '
-  - name: Menina
+    profile: {fileID: 21300000, guid: 2060541ec40b20b438f7cbf7fe0ea3d5, type: 3}
+  - name: Madelyne
     sentence: "Quer brincar? Vou l\xE1 pegar o brinquedo"
-  - name: Menina
+    profile: {fileID: 21300000, guid: 2060541ec40b20b438f7cbf7fe0ea3d5, type: 3}
+  - name: Madelyne
     sentence: "Onde ser\xE1 que eu deixei ele...?"
+    profile: {fileID: 21300000, guid: 2060541ec40b20b438f7cbf7fe0ea3d5, type: 3}
 --- !u!135 &8638109427480577227
 SphereCollider:
   m_ObjectHideFlags: 0
