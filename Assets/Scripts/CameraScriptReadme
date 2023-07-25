@@ -1,0 +1,8 @@
+  Uma das maiores dificuldades que eu tive durante a produção do game, porque eu não queria usar uma câmera que se movia o tempo todo, igual a câmera Dolly do pacote Cinemachine, mas ao mesmo tempo ela precisaria se mexer
+conforme a personagem fosse andando pelo cenário. Só que, ao mesmo tempo que isso acontecia, se ela decidisse mudar de direção no meio do caminho, a câmera deveria retornar para a posição que ela tava anteriormente.
+Resolvi isso usando um interpolação linear de vector3, e usando a direção pra onde a personagem está indo, pegando somente a float retornada do método GetAxis. A câmera está sempre tentando ir pra uma posição. Essa posição
+depende da direção que o player está indo. 
+  E quando o player sai do trigger que faz a câmera se mexer, ela para a movimentação, também.
+
+  A segunda dificuldade que tive com a câmera foi em relação às transições de cenários. No jogo, existiriam 5 cenários diferentes, e multicâmeras, uma para cada cenário. Essas dos outros cômodos não teriam movimentação
+com exceção do sótão, que seria uma câmera Dolly. O script de câmera é o responsável por desligar cada uma das câmera, e fazer a transição entre elas.
