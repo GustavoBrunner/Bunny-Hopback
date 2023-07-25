@@ -1,0 +1,4 @@
+Show de if. Esse script foi uma resposta que achei pra um problema que eu tive durante o desenvolvimento do game. Pelo fato do jogo ficar reiniciando e sempre permitindo que a menina vá um pouco além a cada loop, 
+decidi separar o jogo por fases, a primeira fase ia até certo ponto, a segunda fase mudaria coisas da primeira, e permitiria ela ir um pouco mais além, etc. Porém me encontrei num momento em que eu me perdia em tantas fases
+quando tentei fazer isso "manual", então esse script foi a resposta pra isso. Pra ele eu enviava dois enums diferentes, um que indicava qual loop eu estava, e em que parte desse loop eu estava, e ele me retornaria uma string
+que me indicaria em qual fase geral do jogo eu estou. Hoje eu consigo pensar maneiras melhores de fazer isso, mas foi uma solução que me facilitou demais a vida, na época.
