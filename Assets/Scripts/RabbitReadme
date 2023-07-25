@@ -1,0 +1,2 @@
+  Junto com o dialogue manager, o código mais importante do jogo. Basicamente toda a progressão é feita através dos diálogos com o coelho, dependendo da fase que o jogo se encontra. O coelho dispara diálogos, dispara as transições
+Basicamente ele é um objeto interativo como todos os outros, que verifica a fase atual, no game controller, e dispara algo baseado nisso, sempre que a personagem interagir com ele.
