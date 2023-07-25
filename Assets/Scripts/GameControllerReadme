@@ -1,0 +1,3 @@
+  Responsável por definir algumas coisas no jogo. Acabei deixando o GameController meio sub-utilizado durante a produção do jogo, mas ele começa algumas transições, e comportamentos durante as cutscenes, checagem da resposta
+do puzzle de palavra e do de combinação, habilita a interação com alguns objetos e o GameController também é o responsável por reiniciar o jogo, iniciando o white effect que tem na câmera principal, que levará à primeira
+fase do jogo, novamente
