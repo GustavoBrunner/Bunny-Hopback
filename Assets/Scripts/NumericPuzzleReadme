@@ -1,0 +1,2 @@
+  Código do puzzle numérico. Relativamente simples, cada vez que um dos botões for apertado, seu sprite muda, sempre pra mais, e uma variável é incrementada, e esse número é enviado através de um evento, para outro script
+lidar com ele. Quando o player chegar no seu número desejado ele pressionará no botão de enviar, que pegará todos os números, colocará em um array, e enviará para o gamecontroller verificar se a verificação está correta.
