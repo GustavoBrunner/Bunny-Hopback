@@ -1,0 +1,5 @@
+  Responsável por fazer todos os diálogos acontecerem, e disparar algumas coisas como sons, que aconteceriam em momentos específicos de diálogos. 
+  Os diálogos são passados por um botão, e acontecem sempre ao interagir com alguns objetos específicos, que são definidos por uma interface. 
+  Esse script define a velocidade com que o texto é passado, e o cooldown para apertar o botão de pular novamente, que devido à interação dos diálogos com as transições de câmera ocasionava alguns bugs se fosse possível
+pressionar muito rápido. Também possui sistemas de checar se a "cutscene" (que no nosso jogo são telas pretas de interação entre a menina e o coelho), como basicamente todo o jogo é diretamente dependente da história
+pois não tem pontuação, nem como perder ou ganhar, esse é o script mais central do game. Tudo depende dele, e ele faz as coisas acontecerem, inclusive os reinicios dos Loops. 
